@@ -1,0 +1,110 @@
+Jumlah Obyek Wisata,Objek Wisata Budaya,Objek Wisata Budaya
+Jumlah Obyek Wisata,Objek Wisata Bahari,Objek Wisata Bahari
+Jumlah Obyek Wisata,Objek Wisata Cagar Alam,Objek Wisata Cagar Alam
+Jumlah Obyek Wisata,Objek Wisata Pertanian,Objek Wisata Pertanian
+Jumlah Obyek Wisata,Objek Wisata Buru,Objek Wisata Buru
+Jumlah Obyek Wisata,Objek Wisata Alam,Objek Wisata Alam
+Jumlah Obyek Wisata,Objek Wisata Sejarah,Objek Wisata Sejarah
+Jumlah Obyek Wisata,Objek Wisata Religi,Objek Wisata Religi
+Jumlah Obyek Wisata,Objek Wisata Pendidikan,Objek Wisata Pendidikan
+Jumlah Obyek Wisata,Objek Wisata Kuliner,Objek Wisata Kuliner
+Jumlah Obyek Wisata,Objek Wisata Belanja,Objek Wisata Belanja
+Jumlah Obyek Wisata,Objek Wisata Buatan,Objek Wisata Buatan
+Jumlah Kunjungan Wisatawan,Wisatawan Domestik,Wisatawan Domestik
+Jumlah Kunjungan Wisatawan,Wisatawan Mancanegara,Wisatawan Mancanegara
+Kunjungan Wisatawan Per Objek Wisata,Objek Wisata Budaya Domestik,Objek Wisata Budaya Domestik
+Kunjungan Wisatawan Per Objek Wisata,Objek Wisata Budaya Mancanegara,Objek Wisata Budaya Mancanegara
+Objek Wisata Bahari,Objek Wisata Bahari Domestik,Objek Wisata Bahari Domestik
+Objek Wisata Cagar Alam,Objek Wisata Cagar Alam Mancanegara,Objek Wisata Cagar Alam Mancanegara
+Objek Wisata Cagar Alam,Objek Wisata Cagar Alam Domestik,Objek Wisata Cagar Alam Domestik
+Objek Wisata Pertanian,Objek Wisata Pertanian Mancanegara,Objek Wisata Pertanian Mancanegara
+Objek Wisata Pertanian,Objek Wisata Pertanian Domestik,Objek Wisata Pertanian Domestik
+Objek Wisata Buru,Objek Wisata Buru Mancanegara,Objek Wisata Buru Mancanegara
+Objek Wisata Buru,Objek Wisata Buru Domestik,Objek Wisata Buru Domestik
+Objek Wisata Alam,Objek Wisata Alam Domestik,Objek Wisata Alam Domestik
+Objek Wisata Alam,Objek Wisata Alam Mancanegara,Objek Wisata Alam Mancanegara
+Objek Wisata Sejarah,Objek Wisata Sejarah Domestik,Objek Wisata Sejarah Domestik
+Objek Wisata Sejarah,Objek Wisata Sejarah Mancanegara,Objek Wisata Sejarah Mancanegara
+Objek Wisata Religi,Objek Wisata Religi Domestik,Objek Wisata Religi Domestik
+Objek Wisata Religi,Objek Wisata Religi Mancanegara,Objek Wisata Religi Mancanegara
+Objek Wisata Pendidikan,Objek Wisata Pendidikan Domestik,Objek Wisata Pendidikan Domestik
+Objek Wisata Pendidikan,Objek Wisata Pendidikan Mancanegara,Objek Wisata Pendidikan Mancanegara
+Objek Wisata Kuliner,Objek Wisata Kuliner Domestik,Objek Wisata Kuliner Domestik
+Objek Wisata Kuliner,Objek Wisata Kuliner Mancanegara,Objek Wisata Kuliner Mancanegara
+Objek Wisata Belanja,Objek Wisata Belanja Domestik,Objek Wisata Belanja Domestik
+Objek Wisata Belanja,Objek Wisata Belanja Mancanegara,Objek Wisata Belanja Mancanegara
+Objek Wisata Buatan,Objek Wisata Buatan Domestik,Objek Wisata Buatan Domestik
+Objek Wisata Buatan,Objek Wisata Buatan Mancanegara,Objek Wisata Buatan Mancanegara
+Lama Kunjungan Wisatawan,Lama Kunjungan Wisatawan Domestik,Lama Kunjungan Wisatawan Domestik
+Lama Kunjungan Wisatawan,Lama Kunjungan Wisatawan Mancanegara,Lama Kunjungan Wisatawan Mancanegara
+Jenis Penginapan,Jumlah Hotel Bintang Lima,Jumlah Kamar
+Jenis Penginapan,Jumlah Hotel Bintang Lima,Jumlah Tempat Tidur
+Jenis Penginapan,Jumlah Hotel Bintang Empat,Jumlah Kamar
+Jenis Penginapan,Jumlah Hotel Bintang Empat,Jumlah Tempat Tidur
+Jenis Penginapan,Jumlah Hotel Bintang Tiga,Jumlah Kamar
+Jenis Penginapan,Jumlah Hotel Bintang Tiga,Jumlah Tempat Tidur
+Jenis Penginapan,Jumlah Hotel Bintang Dua,Jumlah Kamar
+Jenis Penginapan,Jumlah Hotel Bintang Dua,Jumlah Tempat Tidur
+Jenis Penginapan,Jumlah Hotel Bintang Satu,Jumlah Kamar
+Jenis Penginapan,Jumlah Hotel Bintang Satu,Jumlah Tempat Tidur
+Jenis Penginapan,Jumlah Hotel Melati,Jumlah Kamar
+Jenis Penginapan,Jumlah Hotel Melati,Jumlah Tempat Tidur
+Penginapan Lainnya,Jumlah Motel,Jumlah Motel
+Penginapan Lainnya,Jumlah Motel,Jumlah Kamar
+Penginapan Lainnya,Jumlah Motel,Jumlah Tempat Tidur
+Penginapan Lainnya,Jumlah Wisma Tamu,Jumlah Wisma Tamu
+Penginapan Lainnya,Jumlah Wisma Tamu,Jumlah Kamar
+Penginapan Lainnya,Jumlah Wisma Tamu,Jumlah Tempat Tidur
+Penginapan Lainnya,Jumlah Kondotel,Jumlah Kondotel
+Penginapan Lainnya,Jumlah Kondotel,Jumlah Kamar
+Penginapan Lainnya,Jumlah Kondotel,Jumlah Tempat Tidur
+Penginapan Lainnya,Jumlah Sanitarium/Sanatorium,Jumlah Sanitarium/Sanatorium
+Penginapan Lainnya,Jumlah Sanitarium/Sanatorium,Jumlah Kamar
+Penginapan Lainnya,Jumlah Sanitarium/Sanatorium,Jumlah Tempat Tidur
+Penginapan Lainnya,Jumlah Bungalow,Jumlah Bungalow
+Penginapan Lainnya,Jumlah Bungalow,Jumlah Kamar
+Penginapan Lainnya,Jumlah Bungalow,Jumlah Tempat Tidur
+Penginapan Lainnya,Jumlah Mess,Jumlah Mess
+Penginapan Lainnya,Jumlah Mess,Jumlah Kamar
+Penginapan Lainnya,Jumlah Mess,Jumlah Tempat Tidur
+Penginapan Lainnya,Jumlah Home Stay,Jumlah Home Stay
+Penginapan Lainnya,Jumlah Home Stay,Jumlah Kamar
+Penginapan Lainnya,Jumlah Home Stay,Jumlah Tempat Tidur
+Penginapan Lainnya,Jumlah Hostel/Asrama,Jumlah Hostel/Asrama
+Penginapan Lainnya,Jumlah Hostel/Asrama,Jumlah Kamar
+Penginapan Lainnya,Jumlah Hostel/Asrama,Jumlah Tempat Tidur
+Penginapan Lainnya,Jumlah Guest House,Jumlah Guest House
+Penginapan Lainnya,Jumlah Guest House,Jumlah Kamar
+Penginapan Lainnya,Jumlah Guest House,Jumlah Tempat Tidur
+Biro Wisata Dan Agen Perjalanan Wisata,Jumlah Biro Wisata,Jumlah Biro Wisata
+Biro Wisata Dan Agen Perjalanan Wisata,Jumlah Agen Perjalanan Wisata,Jumlah Agen Perjalanan Wisata
+Jumlah Pemandu Wisata,Bersertifikat,Bersertifikat
+Jumlah Pemandu Wisata,Tidak Bersertifikat,Tidak Bersertifikat
+Jenis Usaha Jasa Makanan/Minuman,Jumlah Restoran,Jumlah Restoran
+Jenis Usaha Jasa Makanan/Minuman,Jumlah Cafetaria/Cafe,Jumlah Cafetaria/Cafe
+Jenis Usaha Jasa Makanan/Minuman,Jumlah Kantin,Jumlah Kantin
+Jenis Usaha Jasa Makanan/Minuman,Jumlah Coffee Shop,Jumlah Coffee Shop
+Jenis Usaha Jasa Makanan/Minuman,Jumlah Pub/Bar,Jumlah Pub/Bar
+Jenis Usaha Jasa Makanan/Minuman,Jumlah Warung/Kedai Makan,Jumlah Warung/Kedai Makan
+Kategori Restoran Berdasarkan Jenis Makanan Yang Disediakan,Makanan Khas Wakatobi,Makanan Khas Wakatobi
+Kategori Restoran Berdasarkan Jenis Makanan Yang Disediakan,American Food,American Food
+Kategori Restoran Berdasarkan Jenis Makanan Yang Disediakan,Chinnese Food,Chinnese Food
+Kategori Restoran Berdasarkan Jenis Makanan Yang Disediakan,European Food,European Food
+Kategori Restoran Berdasarkan Jenis Makanan Yang Disediakan,Indian Food,Indian Food
+Kategori Restoran Berdasarkan Jenis Makanan Yang Disediakan,Indonesian Food,Indonesian Food
+Kategori Restoran Berdasarkan Jenis Makanan Yang Disediakan,International Food,International Food
+Kategori Restoran Berdasarkan Jenis Makanan Yang Disediakan,Italian Food,Italian Food
+Kategori Restoran Berdasarkan Jenis Makanan Yang Disediakan,Japanese Food,Japanese Food
+Kategori Restoran Berdasarkan Jenis Makanan Yang Disediakan,Middle Eastern Food,Middle Eastern Food
+Kategori Restoran Berdasarkan Jenis Makanan Yang Disediakan,Sea Food,Sea Food
+Kategori Restoran Berdasarkan Jenis Makanan Yang Disediakan,Thai Food,Thai Food
+Kategori Restoran Berdasarkan Jenis Makanan Yang Disediakan,Vegetarian Food,Vegetarian Food
+Pusat Penjualan Cenderamata,Penjualan Cenderamata,Toko Cenderamata
+Pusat Penjualan Cenderamata,Penjualan Cenderamata,Pedagang Cenderamata Non Toko
+Penerimaan Daerah Dari Pariwisata,Penerimaan Dari Pajak,Penerimaan Dari Pajak
+Penerimaan Daerah Dari Pariwisata,Penerimaan Dari Restribusi,Penerimaan Dari Restribusi
+Jumlah Capaian Kinerja Kunjungan Wisata se- Kabupaten dan Kota,Jumlah Capaian Kinerja Kunjungan Wisata se- Kabupaten dan Kota,Jumlah Capaian Kinerja Kunjungan Wisata se- Kabupaten dan Kota
+Jumlah Kunjungan Wisata yang direncanakan se-Kabupaten dan Kota,Jumlah Kunjungan Wisata yang direncanakan se-Kabupaten dan Kota,Jumlah Kunjungan Wisata yang direncanakan se-Kabupaten dan Kota
+Rata - Rata Kunjungan Wisata Dalam Satu Tahun,Rata - Rata Kunjungan Wisata Dalam Satu Tahun,Rata - Rata Kunjungan Wisata Dalam Satu Tahun
+PAD Sektor Pariwisata,PAD Sektor Pariwisata,PAD Sektor Pariwisata
+Total PAD ,Total PAD ,Total PAD 
