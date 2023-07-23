@@ -59,7 +59,7 @@
   </style>
 </head>
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #E6E9E8;padding:0px;">
+{{-- <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #E6E9E8;padding:0px;">
   <a class="navbar-brand ml-3" href="#" style="color: black;">
   @php
   $webset = DB::table('web_setting')->orderby('id','desc')->limit(1)->get();
@@ -101,8 +101,52 @@
       </li>
     </ul>
   </div>
+</nav> --}}
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-1">
+  <div class="container">
+    <a class="navbar-brand ml-3" href="#" style="color: black;">
+      @php
+      $webset = DB::table('web_setting')->orderby('id','desc')->limit(1)->get();
+      @endphp
+      @foreach($webset as $ws)
+      <img src="{{asset('images/setting/'.$ws->logo)}}" alt=""  width="55">
+      <span id="textheader" style="font-size:20px;">{{$ws->nama}}</span>
+    
+      @endforeach
+      </a>
+      <button
+      type="button"
+      class="navbar-toggler"
+      data-bs-target="#navbarNav"
+      data-bs-toggle="collapse"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle Navbar">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+              <li class="nav-item dropdown me-4">
+                  <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Profile
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              <li class="nav-item me-4"><a href="#berita" class="nav-link text-white">Berita</a></li>
+              <li class="nav-item me-4"><a href="#galeri" class="nav-link text-white">Galeri</a></li>
+              <li class="nav-item me-4"><a href="#artikel" class="nav-link text-white">Artikel</a></li>
+              <li class="nav-item me-4"><a href="#tentang-kami" class="nav-link text-white">Tentang Kami</a></li>
+          </ul>
+          <div class="button me-4">Login</div>
+      </div>
+  </div>
 </nav>
-
 @yield('content')
 <footer class="footer mt-auto py-3 bg-dark text-center" style="background-color: #801515;">
   <div class="container">
