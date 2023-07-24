@@ -105,7 +105,7 @@
 </nav> --}}
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-1">
   <div class="container">
-    <a class="navbar-brand ml-3" href="#" style="color: black;">
+    <a class="navbar-brand ml-3" href="#">
       @php
       $webset = DB::table('web_setting')->orderby('id','desc')->limit(1)->get();
       @endphp
@@ -129,15 +129,9 @@
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
               <li class="nav-item dropdown me-4">
-                  <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Profile
+                  <a class="nav-link text-white" href="{{url('/profile-data')}}" >
+                    Profile Data
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
                 </li>
               <li class="nav-item me-4"><a href="#berita" class="nav-link text-white">Berita</a></li>
               <li class="nav-item me-4"><a href="#galeri" class="nav-link text-white">Galeri</a></li>
@@ -151,7 +145,10 @@
 @yield('content')
 <footer class="footer mt-auto py-3 bg-dark text-center" style="background-color: #801515;">
   <div class="container">
-    <span class="text-white">Copyright © 2023 WAKATOBI</span>
+    @php
+        $tahun = date('Y');
+    @endphp
+    <span class="text-white">Copyright ©{{$tahun}}  WAKATOBI</span>
   </div>
 </footer>
 <script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
