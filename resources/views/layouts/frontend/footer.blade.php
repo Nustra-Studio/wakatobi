@@ -32,7 +32,7 @@ $visitor = DB::table('visitor')->count();
     </div>
 </div> --}}
 <footer>
-        <div class="container">
+        <div class="container-fluid pb-3">
         <div class="row d-flex ">
         <div class="col-lg-6 text-white">
             <div class=" d-flex align-items-center">
