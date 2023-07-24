@@ -5,7 +5,7 @@
 <body>
     <input id="dashboard_input" type="hidden" value="dashboard">
     <div class="container-xl">
-
+{{-- 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
             <div class="carousel-inner">
@@ -111,7 +111,35 @@
 
 
             </div>
-        </div>
+        </div> --}}
+        <!-- section 1 -->
+        <section class="section-1">
+            <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+            <div class="text-center text-box">
+                <h1 class="text-white">Menghubungkan, Mengamankan, dan Mengelola Data Anda!</h1>
+                <p class="text-white">Membantu anda mengelola data dengan mudah, termasuk pengumpulan,
+                    penyimpanan dan pengorganisasian data.</p>    
+            </div>
+            </div>
+        </section>
+        
+    <!-- section 2 -->
+        <section class="container section-2">
+            <div class="d-flex section-2-container">
+            <div class="poin1 d-flex section-2-item">
+                <img src="img/Icon.png" alt="">
+                <span class="text-center">Penyedia Data Yang Cepat</span>
+            </div>
+            <div class="poin2 d-flex section-2-item">
+                <img src="img/Icon(1).png" alt="">
+                <span class="text-center">Penyedia Data Yang Cepat</span>
+            </div>
+            <div class="poin3 d-flex section-2-item">
+                <img src="img/Icon(2).png" alt="">
+                <span class="text-center">Penyedia Data Yang Cepat</span>
+            </div>
+            </div>
+        </section>
         <div class="container-fluit"
             style="background-color: #E9EEEF;padding-right: 7%;padding-left: 7%;padding-top: 3%;">
             <div class="row" style="background-color: #E9EEEF;padding-bottom: 3%;margin-right: 3%;margin-left: 3%;">
