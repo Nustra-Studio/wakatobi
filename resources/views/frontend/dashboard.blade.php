@@ -248,7 +248,6 @@
             @endforeach
         </div>
     </div>
-    @include('layouts/frontend/footer')
     </div>
 
 </body>
