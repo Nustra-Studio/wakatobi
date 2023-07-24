@@ -138,7 +138,7 @@
               <li class="nav-item me-4"><a href="#artikel" class="nav-link text-white">Artikel</a></li>
               <li class="nav-item me-4"><a href="#tentang-kami" class="nav-link text-white">Tentang Kami</a></li>
           </ul>
-          <div class="button me-4">Login</div>
+          <div class="button text-center me-4">Login</div>
       </div>
   </div>
 </nav>
