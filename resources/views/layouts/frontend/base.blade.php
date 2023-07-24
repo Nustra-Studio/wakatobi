@@ -143,14 +143,14 @@
   </div>
 </nav>
 @yield('content')
-<footer class="footer mt-auto py-3 bg-dark text-center" style="background-color: #801515;">
+{{-- <footer class="footer mt-auto py-3 bg-dark text-center" style="background-color: #801515;">
   <div class="container">
     @php
         $tahun = date('Y');
     @endphp
     <span class="text-white">Copyright ©{{$tahun}}  WAKATOBI</span>
   </div>
-</footer>
+</footer> --}}
 <script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('customjs/script.js')}}"></script>
