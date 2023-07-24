@@ -1,22 +1,13 @@
 let nav = document.querySelector('nav')
-
-window.addEventListener('scroll',function () {
-if (window.pageYOffset > 100) {
-    nav.classList.add('bg-dark', 'shadow')
-} else {
-    nav.classList.remove('bg-dark', 'shadow')
-}
-});
-    if(window.location.pathname === '/'){
+    function remove() {
+        nav.classList.remove('bg-dark', 'shadow')
+    }
+    remove()
+    window.addEventListener('scroll',function () {
+        nav.classList.remove('bg-dark', 'shadow')
+    if (window.pageYOffset > 100) {
         nav.classList.add('bg-dark', 'shadow')
+    } else {
+        nav.classList.remove('bg-dark', 'shadow')
     }
-    else{
-        let nav = document.querySelector('nav')
-        window.addEventListener('scroll',function () {
-        if (window.pageYOffset > 100) {
-            nav.classList.add('bg-dark', 'shadow')
-        } else {
-            nav.classList.remove('bg-dark', 'shadow')
-        }
-        });
-    }
+    });

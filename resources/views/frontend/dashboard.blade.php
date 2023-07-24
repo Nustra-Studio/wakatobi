@@ -251,5 +251,6 @@
     </div>
     </div>
     @include('layouts/frontend/footer')
+    <script src="{{asset('customjs/script.js')}}"></script>
 </body>
 @endsection

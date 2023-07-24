@@ -103,7 +103,7 @@
     </ul>
   </div>
 </nav> --}}
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-1">
+<nav class="navbar bg-dark fixed-top navbar-expand-lg navbar-dark p-md-1">
   <div class="container">
     <a class="navbar-brand ml-3" href="#">
       @php
@@ -153,7 +153,7 @@
 </footer> --}}
 <script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<script src="{{asset('customjs/script.js')}}"></script>
+
 @yield('customjs')
 @yield('customscripts')
 </html>
