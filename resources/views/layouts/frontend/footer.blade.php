@@ -72,7 +72,7 @@ $visitor = DB::table('visitor')->count();
                 @php
                 $tahun = date('Y');
                 @endphp
-            <span class="me-2">&#169</span>{{$tahun}}{{ }}Dinas Komunikasi, Informatika dan Statistik Kabupaten Wakatobi</p>
+            <span class="me-2">&#169</span>{{$tahun}} Dinas Komunikasi, Informatika dan Statistik Kabupaten Wakatobi</p>
         </div>
     
 </footer>
