@@ -113,7 +113,7 @@
         </div> --}}
         <!-- section 1 -->
         <section class="section-1">
-            <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center" style="background-image: url('{{asset("img/Section1BG.png")}}');">
+            <div class="banner-image w-110 vh-110 d-flex justify-content-center align-items-center" style="background-image: url('{{asset("img/Section1BG.png")}}');">
             <div class="text-center text-box">
                 <h1 class="text-white">Menghubungkan, Mengamankan, dan Mengelola Data Anda!</h1>
                 <p class="text-white">Membantu anda mengelola data dengan mudah, termasuk pengumpulan,
