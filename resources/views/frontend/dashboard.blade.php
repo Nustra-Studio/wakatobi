@@ -253,10 +253,18 @@
     @include('layouts/frontend/footer')
     <script>
         let nav = document.querySelector('nav')
-    function remove() {
+        function remove() {
+            nav.classList.remove('bg-dark', 'shadow')
+        }
+        remove()
+        window.addEventListener('scroll',function () {
         nav.classList.remove('bg-dark', 'shadow')
-    }
-    remove()
+        if (window.pageYOffset > 100) {
+            nav.classList.add('bg-dark', 'shadow')
+        } else {
+            nav.classList.remove('bg-dark', 'shadow')
+        }
+        });
     </script>
     <script src="{{asset('customjs/script.js')}}"></script>
 </body>
