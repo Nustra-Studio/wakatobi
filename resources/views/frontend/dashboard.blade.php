@@ -3,8 +3,7 @@
 @section('content')
 
 <body>
-    <input id="dashboard_input" type="hidden" value="dashboard">
-    <div class="container-xl">
+    <div class="container-fluid">
 {{-- 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
