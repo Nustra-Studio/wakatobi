@@ -138,7 +138,7 @@
               <li class="nav-item me-4"><a href="#artikel" class="nav-link text-white">Artikel</a></li>
               <li class="nav-item me-4"><a href="#tentang-kami" class="nav-link text-white">Tentang Kami</a></li>
           </ul>
-          <div class="button text-center me-4">Login</div>
+          <a href="{{url('login')}}" class="button text-center me-4">Login</a>
       </div>
   </div>
 </nav>
