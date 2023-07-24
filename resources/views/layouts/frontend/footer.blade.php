@@ -1,9 +1,9 @@
 @php
 $webset = DB::table('web_setting')->orderby('id','desc')->limit(1)->get();
-$visitor_bulan = DB::table('visitor')->whereMonth('created_at', date('m'))->count();
-$visitor_hari = DB::table('visitor')->whereDay('created_at', date('d'))->count();
-$visitor_kemarin = DB::table('visitor')->whereDay('created_at', date('d', strtotime('-1 days')))->count();
-$visitor_minggu = DB::table('visitor')->whereBetween('created_at', [date('Y-m-d', strtotime('-7 days')), date('Y-m-d')])->count();
+$visitor_bulan = DB::table('visitor')->whereMonth('date', date('m'))->count();
+$visitor_hari = DB::table('visitor')->whereDay('date', date('d'))->count();
+$visitor_kemarin = DB::table('visitor')->whereDay('date', date('d', strtotime('-1 days')))->count();
+$visitor_minggu = DB::table('visitor')->whereBetween('date', [date('Y-m-d', strtotime('-7 days')), date('Y-m-d')])->count();
 $visitor = DB::table('visitor')->count();
 @endphp
 @foreach($webset as $ws)
