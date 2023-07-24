@@ -251,6 +251,13 @@
     </div>
     </div>
     @include('layouts/frontend/footer')
+    <script>
+        let nav = document.querySelector('nav')
+    function remove() {
+        nav.classList.remove('bg-dark', 'shadow')
+    }
+    remove()
+    </script>
     <script src="{{asset('customjs/script.js')}}"></script>
 </body>
 @endsection
