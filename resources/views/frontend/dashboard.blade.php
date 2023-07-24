@@ -249,6 +249,6 @@
         </div>
     </div>
     </div>
-
+    @include('layouts/frontend/footer')
 </body>
 @endsection
