@@ -59,7 +59,7 @@ $visitor = DB::table('visitor')->count();
             <h3>Social Media</h3>
             <div class="link footer-item">
                 <a href="{{$ws->link_fb}}"><img src="img/facebook.png" alt=""></a>
-                <a href="{{$ws->link_ig}}"><img src="img/instagram.png" alt=""></a>
+                <a href="{{$ws->link_ig}}"><img src="img/instagram_icon.png" alt=""></a>
                 <a href=""><img src="img/twitter.png" alt=""></a>
                 <a href="{{$ws->link_youtube}}"><img src="img/youtube.png" alt=""></a>
             </div> 
@@ -72,7 +72,7 @@ $visitor = DB::table('visitor')->count();
                 @php
                 $tahun = date('Y');
                 @endphp
-            <span class="me-2">&#169</span>{{$tahun}}Dinas Komunikasi, Informatika dan Statistik Kabupaten Wakatobi</p>
+            <span class="me-2">&#169</span>{{$tahun}}{{ }}Dinas Komunikasi, Informatika dan Statistik Kabupaten Wakatobi</p>
         </div>
     
 </footer>
