@@ -113,15 +113,13 @@
         </div> --}}
         <!-- section 1 -->
         <div class="row">
-            <section class="section-1 ">
-                <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center" style="background-image: url('{{asset("img/Section1BG.png")}}'); width: 100%;">
+            <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center" style="background-image: url('{{asset("img/Section1BG.png")}}'); width: 100%;">
                 <div class="text-center text-box">
                     <h1 class="text-white">Menghubungkan, Mengamankan, dan Mengelola Data Anda!</h1>
                     <p class="text-white">Membantu anda mengelola data dengan mudah, termasuk pengumpulan,
                         penyimpanan dan pengorganisasian data.</p>    
                 </div>
                 </div>
-            </section>
         </div>
         
     <!-- section 2 -->
