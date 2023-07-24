@@ -32,8 +32,8 @@ $visitor = DB::table('visitor')->count();
     </div>
 </div> --}}
 <footer>
-        <div class="container-fluid pb-3">
-        <div class="row d-flex mx-2 mt-2 ">
+        <div class="container pb-3">
+        <div class="row d-flex ">
         <div class="col-lg-6 text-white">
             <div class=" d-flex align-items-center">
                 <img src="/img/Frame5.png" alt=""> 
