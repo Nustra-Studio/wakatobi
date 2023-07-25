@@ -453,34 +453,36 @@
             </div>
         </section>
     <!-- Section 4 -->
-            <div class="row" id="galeri">
-            <div class="container">
-                <h3>Galeri</h3>
-                <p>Kumpulan Galeri dari Kegiatan Pemerintahan Kabupaten Wakatobi</p>
-                <div class="row mt-3">
-                <div class="col-lg-6">
-                    <a href="">
-                    <div class="card card-galeri">
-                        <img src="img/image4.png" class="card-img" alt="...">
-                        <img class="yt" src="img/logos_youtube-icon.png" alt="">
-                        <div class="card-img-overlay card-container">
-                        <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
-                        <div class="d-flex">
-                            <img src="img/Vector.png" alt="">
-                            <p class="card-text">Rabu, 05 Juli 2023 </p>
+        <div class="row" id="galeri">
+            <section id="galeri">
+                <div class="container">
+                    <h3>Galeri</h3>
+                    <p>Kumpulan Galeri dari Kegiatan Pemerintahan Kabupaten Wakatobi</p>
+                    <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <a href="">
+                        <div class="card card-galeri">
+                            <img src="img/image4.png" class="card-img" alt="...">
+                            <img class="yt" src="img/logos_youtube-icon.png" alt="">
+                            <div class="card-img-overlay card-container">
+                            <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
+                            <div class="d-flex">
+                                <img src="img/Vector.png" alt="">
+                                <p class="card-text">Rabu, 05 Juli 2023 </p>
+                            </div>
+                            
+                            </div>
                         </div>
-                        
-                        </div>
+                        </a>
                     </div>
-                    </a>
+                    <div class="col-lg-6 galeri-items">
+                        <div class=" galeri-item"><img src="img/Frame29.png" alt=""></div>
+                        <div class="  galeri-item"><img src="img/Frame30.png" alt=""></div>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 galeri-items">
-                    <div class=" galeri-item"><img src="img/Frame29.png" alt=""></div>
-                    <div class="  galeri-item"><img src="img/Frame30.png" alt=""></div>
-                </div>
-                </div>
-            </div>
-            </div>
+                </section>
+        </div>
         <!-- Section 5 -->
             <section id="artikel">
             <div class="container">
