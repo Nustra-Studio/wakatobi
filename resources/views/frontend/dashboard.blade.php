@@ -572,7 +572,11 @@
         </div>
     </div>
     </div> --}}
-    @include('layouts/frontend/footer')
+<div class="continer-fluid mt-3">
+    <div class="row">
+        @include('layouts/frontend/footer')
+    </div>
+</div>
     <script>
         let nav = document.querySelector('nav')
         function remove() {
