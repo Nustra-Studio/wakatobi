@@ -3,7 +3,7 @@
 @section('content')
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid mb-4">
 {{-- 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
