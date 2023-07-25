@@ -572,7 +572,7 @@
         </div>
     </div>
     </div> --}}
-<div class="continer-fluid mt-3">
+<div class="continer-fluid" style="margin-top: 15px">
     <div class="row">
         @include('layouts/frontend/footer')
     </div>
