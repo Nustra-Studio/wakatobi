@@ -453,7 +453,7 @@
             </div>
         </section>
     <!-- Section 4 -->
-            <section id="galeri">
+            <div class="row" id="galeri">
             <div class="container">
                 <h3>Galeri</h3>
                 <p>Kumpulan Galeri dari Kegiatan Pemerintahan Kabupaten Wakatobi</p>
@@ -480,7 +480,7 @@
                 </div>
                 </div>
             </div>
-            </section>
+            </div>
         <!-- Section 5 -->
             <section id="artikel">
             <div class="container">
