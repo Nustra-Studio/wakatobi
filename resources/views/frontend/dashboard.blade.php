@@ -510,7 +510,7 @@
             </div>
             </section>
         <!-- Section 6 -->
-        <section id="tentang-kami">
+        <section id="tentang-kami" class="mb-3">
             <div class="container">
             <h3>Tentang Kami</h3>
             <p style="color: #AAAAAA;">Informasi dari Portal Resmi Kabupaten Wakatobi</p>
