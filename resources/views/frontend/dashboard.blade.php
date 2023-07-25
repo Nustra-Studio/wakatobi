@@ -139,7 +139,7 @@
             </div>
             </div>
         </section>
-        <div class="container-fluit"
+        {{-- <div class="container-fluit"
             style="background-color: #E9EEEF;padding-right: 7%;padding-left: 7%;padding-top: 3%;">
             <div class="row" style="background-color: #E9EEEF;padding-bottom: 3%;margin-right: 3%;margin-left: 3%;">
                 <div class="col-md-8">
@@ -234,9 +234,302 @@
                 </div>
                 @endforeach
             </div>
-        </div>
+        </div> --}}
+        <section class="container" id="berita">
+            <h3>Berita dan Siaran</h3>
+            <p style="color: #AAAAAA;">Berita dan informasi seputar Pemerintahan Kabupaten Wakatobi</p>
+            <div class="row mt-3">
+              <!-- Picture Slider  -->
+              <div class="col-lg-6">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="card">
+                        <img src="img/CardPicture.png" class="card-img" alt="...">
+                        <div class="card-img-overlay card-container">
+                          <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
+                          <div class="d-flex">
+                            <img src="img/Vector.png" alt="">
+                            <p class="card-text">Rabu, 05 Juli 2023 </p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card">
+                        <img src="img/CardPicture.png" class="card-img" alt="...">
+                        <div class="card-img-overlay card-container">
+                          <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
+                          <div class="d-flex">
+                            <img src="img/Vector.png" alt="">
+                            <p class="card-text">Rabu, 05 Juli 2023 </p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card">
+                        <img src="img/CardPicture.png" class="card-img" alt="...">
+                        <div class="card-img-overlay card-container">
+                          <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
+                          <div class="d-flex">
+                            <img src="img/Vector.png" alt="">
+                            <p class="card-text">Rabu, 05 Juli 2023 </p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <!-- News Content -->
+              <div class="col-lg-6">
+                <div class="kategori d-flex">
+                  <div class="kategori-btn d-flex">
+                    <div class="btn1 me-4">Terbaru</div>
+                    <div class="btn2">Populer</div>
+                  </div>
+                  <a href="">Lihat Semua</a>
+                </div>
+                <div class="news-content-container">
+                  <div class="news-content-item d-flex">
+                    <img class="frame" src="img/image12.png" alt="">
+                    <div class="news-content-text">
+                      <h6>Bersinergi Kembangkan Wakatobi</h6>
+                      <div class="d-flex">
+                        <img src="img/date_range.png" alt="">
+                        <p class="card-text">Hari ini </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-content-item d-flex">
+                    <img class="frame" src="img/image12.png" alt="">
+                    <div class="news-content-text">
+                      <h6>Bersinergi Kembangkan Wakatobi</h6>
+                      <div class="d-flex">
+                        <img src="img/date_range.png" alt="">
+                        <p class="card-text">Hari ini </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-content-item d-flex">
+                    <img class="frame" src="img/image12.png" alt="">
+                    <div class="news-content-text">
+                      <h6>Bersinergi Kembangkan Wakatobi</h6>
+                      <div class="d-flex">
+                        <img src="img/date_range.png" alt="">
+                        <p class="card-text">Hari ini </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-content-item d-flex">
+                    <img class="frame" src="img/image12.png" alt="">
+                    <div class="news-content-text">
+                      <h6>Bersinergi Kembangkan Wakatobi</h6>
+                      <div class="d-flex">
+                        <img src="img/date_range.png" alt="">
+                        <p class="card-text">Hari ini </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-content-item d-flex">
+                    <img class="frame" src="img/image12.png" alt="">
+                    <div class="news-content-text">
+                      <h6>Bersinergi Kembangkan Wakatobi</h6>
+                      <div class="d-flex">
+                        <img src="img/date_range.png" alt="">
+                        <p class="card-text">Hari ini </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-content-item d-flex">
+                    <img class="frame" src="img/image12.png" alt="">
+                    <div class="news-content-text">
+                      <h6>Bersinergi Kembangkan Wakatobi</h6>
+                      <div class="d-flex">
+                        <img src="img/date_range.png" alt="">
+                        <p class="card-text">Hari ini </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-content-item d-flex">
+                    <img class="frame" src="img/image12.png" alt="">
+                    <div class="news-content-text">
+                      <h6>Bersinergi Kembangkan Wakatobi</h6>
+                      <div class="d-flex">
+                        <img src="img/date_range.png" alt="">
+                        <p class="card-text">Hari ini </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-content-item d-flex">
+                    <img class="frame" src="img/image12.png" alt="">
+                    <div class="news-content-text">
+                      <h6>Bersinergi Kembangkan Wakatobi</h6>
+                      <div class="d-flex">
+                        <img src="img/date_range.png" alt="">
+                        <p class="card-text">Hari ini </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-content-item d-flex">
+                    <img class="frame" src="img/image12.png" alt="">
+                    <div class="news-content-text">
+                      <h6>Bersinergi Kembangkan Wakatobi</h6>
+                      <div class="d-flex">
+                        <img src="img/date_range.png" alt="">
+                        <p class="card-text">Hari ini </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-content-item d-flex">
+                    <img class="frame" src="img/image12.png" alt="">
+                    <div class="news-content-text">
+                      <h6>Bersinergi Kembangkan Wakatobi</h6>
+                      <div class="d-flex">
+                        <img src="img/date_range.png" alt="">
+                        <p class="card-text">Hari ini </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-content-item d-flex">
+                    <img class="frame" src="img/image12.png" alt="">
+                    <div class="news-content-text">
+                      <h6>Bersinergi Kembangkan Wakatobi</h6>
+                      <div class="d-flex">
+                        <img src="img/date_range.png" alt="">
+                        <p class="card-text">Hari ini </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-content-item d-flex">
+                    <img class="frame" src="img/image12.png" alt="">
+                    <div class="news-content-text">
+                      <h6>Bersinergi Kembangkan Wakatobi</h6>
+                      <div class="d-flex">
+                        <img src="img/date_range.png" alt="">
+                        <p class="card-text">Hari ini </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-content-item d-flex">
+                    <img class="frame" src="img/image12.png" alt="">
+                    <div class="news-content-text">
+                      <h6>Bersinergi Kembangkan Wakatobi</h6>
+                      <div class="d-flex">
+                        <img src="img/date_range.png" alt="">
+                        <p class="card-text">Hari ini </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-content-item d-flex">
+                    <img class="frame" src="img/image12.png" alt="">
+                    <div class="news-content-text">
+                      <h6>Bersinergi Kembangkan Wakatobi</h6>
+                      <div class="d-flex">
+                        <img src="img/date_range.png" alt="">
+                        <p class="card-text">Hari ini </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+    <!-- Section 4 -->
+            <section id="galeri">
+            <div class="container">
+                <h3>Galeri</h3>
+                <p>Kumpulan Galeri dari Kegiatan Pemerintahan Kabupaten Wakatobi</p>
+                <div class="row mt-3">
+                <div class="col-lg-6">
+                    <a href="">
+                    <div class="card card-galeri">
+                        <img src="img/image4.png" class="card-img" alt="...">
+                        <img class="yt" src="img/logos_youtube-icon.png" alt="">
+                        <div class="card-img-overlay card-container">
+                        <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
+                        <div class="d-flex">
+                            <img src="img/Vector.png" alt="">
+                            <p class="card-text">Rabu, 05 Juli 2023 </p>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 galeri-items">
+                    <div class=" galeri-item"><img src="img/Frame29.png" alt=""></div>
+                    <div class="  galeri-item"><img src="img/Frame30.png" alt=""></div>
+                </div>
+                </div>
+            </div>
+            </section>
+        <!-- Section 5 -->
+            <section id="artikel">
+            <div class="container">
+                <div class="d-flex justify-content-between"><div>
+                <h3>Artikel Populer</h3>
+                <p style="color: #AAAAAA;">Artikel seputar Pemerintahan Kabupaten Wakatobi</p>
+                </div>
+                <div class="page-button">
+                <img src="img/Frame75.png" alt="">
+                <img src="img/Frame74.png" alt="">
+                </div>
+            </div>
+                <div class="row mt-3">
+                    <div class="col-lg-5 artikel-img">
+                    <img src="img/Frame72.png" alt="">
+                    </div>
+                    <div class="col-lg-7  box">
+                    <h3>HUT Republik Indonesia yang ke-77</h3>
+                    <p>Hari Ulang Tahun Republik Indonesia ke-77 adalah perayaan yang memperingati kemerdekaan Indonesia dari penjajahan. Setiap tanggal 17 Agustus, seluruh rakyat Indonesia merayakan dengan semangat dan kebanggaan.</p>
+                    <p>
+                        Perayaan ini mengingatkan kita akan perjuangan para pahlawan yang telah berjuang untuk memperoleh kemerdekaan. Kemerdekaan Indonesia yang kita nikmati saat ini adalah hasil dari perjuangan dan pengorbanan mereka.
+                    </p>
+                    </div>
+                </div>
+            </div>
+            </section>
+        <!-- Section 6 -->
+        <section id="tentang-kami">
+            <div class="container">
+            <h3>Tentang Kami</h3>
+            <p style="color: #AAAAAA;">Informasi dari Portal Resmi Kabupaten Wakatobi</p>
+            <div class="row">
+                <div class="col-lg-6 ">
+                <img src="img/Frame28.png" alt="">
+                </div>
+                <div class="col-lg-6 about-content-item">
+                <div class="content">
+                <h3>Kabupaten Wakatobi</h3>
+                <p>Pengolahan data Kabupaten Wakatobi merupakan proses penting dalam mengelola informasi dan statistik terkait wilayah tersebut. Kabupaten Wakatobi menggunakan teknologi dan sistem informasi modern untuk mengumpulkan, menyimpan, menganalisis, dan mengelola data yang beragam.
+                    Pengolahan data ini meliputi data demografi penduduk, data ekonomi, data kependudukan, data lingkungan, data kesehatan, dan data lainnya yang relevan. </p>
+                </div>
+                <div class="d-flex button-container"> <a href=""><div class="button-about">Lihat Lebih Banyak</div></a></div>
+                </div>
+                
+            </div>
+            </div>
+        </section>
     </div>
-
+{{-- 
     <div class="container-fluit" style="padding-right: 7%;padding-left: 7%;padding-top: 1%;">
         <div class="row" style="padding-bottom: 3%;margin-right: 3%;margin-left: 3%;">
             <div class="col-md-12 mt-2">
@@ -276,7 +569,7 @@
             @endforeach
         </div>
     </div>
-    </div>
+    </div> --}}
     @include('layouts/frontend/footer')
     <script>
         let nav = document.querySelector('nav')
