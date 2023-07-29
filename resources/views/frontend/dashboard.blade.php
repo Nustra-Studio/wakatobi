@@ -14,7 +14,7 @@
             }
         </style>
         <div class="carousel-caption d-flex justify-content-center ">
-          <div class="text-center ">
+          <div class="text-center col-xl-8">
             <h1 class="text-white">Menghubungkan, Mengamankan, dan Mengelola Data Anda!</h1>
             <p class="text-white">Membantu anda mengelola data dengan mudah, termasuk pengumpulan,
                 penyimpanan dan pengorganisasian data.</p>    
