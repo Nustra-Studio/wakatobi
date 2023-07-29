@@ -33,8 +33,10 @@
           </div>
         </div>
       </div>
-      @php $i++; @endphp
-      @endforeach
+      @php 
+      $i++; 
+    endforeach;
+      @endphp
       @endif
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
