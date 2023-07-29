@@ -5,21 +5,34 @@
 <body>
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
+      <style>
+        .carousel-caption {
+              top: 30%;
+              bottom: auto;
+          }
+      </style>
+      @if($hitung > 0)
+      @php $i=0; @endphp
+      @foreach($banner as $slider)
+      @if($i == 0)
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="img/Section1BG.png" class="d-block w-100" alt="...">
-        <style>
-          .carousel-caption {
-                top: 30%;
-                bottom: auto;
-            }
-        </style>
+        <img src="{{asset('images/slider/'.$slider->gambar)}}" class="d-block w-100" alt="...">
         <div class="carousel-caption d-flex justify-content-center vh-100 ">
           <div class="text-center col-xl-8">
-            <h1 style="font-size: 3.1vw" class="text-white">Menghubungkan, Mengamankan, dan Mengelola Data Anda!</h1>
-            <p style="font-size: 1.5vw" class="text-white">Membantu anda mengelola data dengan mudah, termasuk pengumpulan,
-                penyimpanan dan pengorganisasian data.</p>    
+            <h1 style="font-size: 3.1vw" class="text-white">{{$slider->judul}}</h1>
+            <p style="font-size: 1.5vw" class="text-white">{{$slider->isi}}</p>    
+          </div>
+        </div>
       </div>
-    </div>
+      @else
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="{{asset('images/slider/'.$slider->gambar)}}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-flex justify-content-center vh-100 ">
+          <div class="text-center col-xl-8">
+            <h1 style="font-size: 3.1vw" class="text-white">{{$slider->judul}}</h1>
+            <p style="font-size: 1.5vw" class="text-white">{{$slider->isi}}</p>    
+          </div>
+        </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
