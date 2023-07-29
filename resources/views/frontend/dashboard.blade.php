@@ -11,7 +11,6 @@
               bottom: auto;
           }
       </style>
-      @if($hitung > 0)
       @php $i=0; @endphp
       @foreach($banner as $slider)
       @if($i == 0)
