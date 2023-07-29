@@ -113,13 +113,34 @@
         </div> --}}
         <!-- section 1 -->
         <div class="row">
-            <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center" style="background-image: url('{{asset("img/Section1BG.png")}}'); width: 100%;">
-                <div class="text-center text-box">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="img/Section1BG.png" class="d-block w-100" alt="...">
+                <style>
+                  .carousel-caption {
+                        top: 30%;
+                        bottom: auto;
+                    }
+                </style>
+                <div class="carousel-caption d-flex justify-content-center ">
+                  <div class="text-center col-8">
                     <h1 class="text-white">Menghubungkan, Mengamankan, dan Mengelola Data Anda!</h1>
                     <p class="text-white">Membantu anda mengelola data dengan mudah, termasuk pengumpulan,
                         penyimpanan dan pengorganisasian data.</p>    
-                </div>
-                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
         
     <!-- section 2 -->
