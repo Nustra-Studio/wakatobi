@@ -34,6 +34,9 @@
           </div>
         </div>
       </div>
+      @php $i++; @endphp
+      @endforeach
+      @endif
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -44,9 +47,6 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  @php $i++; @endphp
-  @endforeach
-  @endif
   <div class="container-fluid">
 {{-- 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
