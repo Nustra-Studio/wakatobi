@@ -36,7 +36,7 @@
       @endif
       @php $i++; @endphp
       @endforeach
-      
+
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -566,6 +566,9 @@
             </div>
             </div>
         </section>
+        <div class="row">
+          @include('layouts/frontend/footer')
+      </div>
     </div>
 {{-- 
     <div class="container-fluit" style="padding-right: 7%;padding-left: 7%;padding-top: 1%;">
@@ -608,11 +611,7 @@
         </div>
     </div>
     </div> --}}
-<div class="continer-fluid" style="margin-top: 15px">
-    <div class="row">
-        @include('layouts/frontend/footer')
-    </div>
-</div>
+
     <script>
         let nav = document.querySelector('nav')
         function remove() {
