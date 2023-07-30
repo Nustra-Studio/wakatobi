@@ -435,7 +435,7 @@
 
                     @endphp
                     @if($i == 0)
-                        <a href="">
+ 
                         <div class="card card-galeri">
                             <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
                             <div class="card-img-overlay card-container">
@@ -447,11 +447,11 @@
                             
                             </div>
                         </div>
-                        </a>
+
                         @endif
                         @php $i++; @endphp
                         @endforeach
-                        </a>
+
                     </div>
                     <div class="col-lg-6 galeri-items">
                         @php
@@ -461,11 +461,9 @@
                             @if($i == 0)
                             <div class=" galeri-item d-none"><img src="{{asset('images/galeri/'.$galeri->gambar)}}" alt=""></div>
                             @elseif ($i >= 1)
-                            <a href="">
                                 <div class="card card-galeri my-2">
                                     <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
                                 </div>
-                                </a>
                             @endif
                             @php $i++; @endphp
                         @endforeach
