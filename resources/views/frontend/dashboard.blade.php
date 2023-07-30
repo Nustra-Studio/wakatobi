@@ -498,7 +498,7 @@
                                 </div>
                                 <div class="col-lg-7 box">
                                 <h3>{{$artikel->judul}}</h3>
-                                {{$artikel->isi}}
+                                {!!$artikel->isi!!}
                                 </div>
                             </div>
                         </a>
