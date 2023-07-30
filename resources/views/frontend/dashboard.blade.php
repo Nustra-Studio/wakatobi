@@ -287,7 +287,7 @@
                     <div class="carousel-item active ">
                       <div class="card">
                         <img src="img/CardPicture.png" class="card-img" alt="...">
-                        <div class="card-img-overlay card-container pb-3">
+                        <div class="card-img-overlay card-container pb-5">
                           <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
                           <div class="d-flex">
                             <img src="img/Vector.png" alt="">
