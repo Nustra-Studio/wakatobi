@@ -482,7 +482,7 @@
                 <p style="color: #AAAAAA;">Artikel seputar Pemerintahan Kabupaten Wakatobi</p>
                 </div>
                 <div class="page-button">
-                <img src="img/Frame75.png" alt="">
+                <a id="prevBtn"><img src="img/Frame75.png" alt=""></a>
                 <img src="img/Frame74.png" alt="">
                 </div>
             </div>
@@ -581,6 +581,30 @@
             artikel.href = '#artikel'
         }
         remove()
+        function artikel(){
+            const artikelSlide = document.querySelector(".carousel-slide");
+                const prevBtn = document.getElementById("prevBtn");
+                const nextBtn = document.getElementById("nextBtn");
+                let counter = 0;
+
+                function slideArtikel() {
+                artikelSlide.style.transition = "transform 0.4s ease-in-out";
+                artikelSlide.style.transform = `translateX(-${counter * 100}%)`;
+                }
+
+                nextBtn.addEventListener("click", () => {
+                if (counter >= artikelSlide.childElementCount - 1) return;
+                counter++;
+                slideArtikel();
+                });
+
+                prevBtn.addEventListener("click", () => {
+                if (counter <= 0) return;
+                counter--;
+                slideArtikel();
+                });
+
+        }
         window.addEventListener('scroll',function () {
         nav.classList.remove('bg-dark', 'shadow')
         if (window.pageYOffset > 100) {
