@@ -605,6 +605,7 @@
                 });
 
         }
+        artikel()
         window.addEventListener('scroll',function () {
         nav.classList.remove('bg-dark', 'shadow')
         if (window.pageYOffset > 100) {
