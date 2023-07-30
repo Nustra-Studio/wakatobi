@@ -526,7 +526,7 @@
                 <p>Pengolahan data Kabupaten Wakatobi merupakan proses penting dalam mengelola informasi dan statistik terkait wilayah tersebut. Kabupaten Wakatobi menggunakan teknologi dan sistem informasi modern untuk mengumpulkan, menyimpan, menganalisis, dan mengelola data yang beragam.
                     Pengolahan data ini meliputi data demografi penduduk, data ekonomi, data kependudukan, data lingkungan, data kesehatan, dan data lainnya yang relevan. </p>
                 </div>
-                <div class="d-flex button-container"> <a href=""><div class="button-about">Lihat Lebih Banyak</div></a></div>
+                <div class="d-flex button-container"> <a href="{{url('tentang-kami')}}"><div class="button-about">Lihat Lebih Banyak</div></a></div>
                 </div>
                 
             </div>
