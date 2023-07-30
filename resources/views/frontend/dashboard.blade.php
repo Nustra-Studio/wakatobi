@@ -566,7 +566,7 @@
             </div>
             </div>
         </section>
-        <div class="row">
+        <div class="row mt-3">
           @include('layouts/frontend/footer')
       </div>
     </div>
