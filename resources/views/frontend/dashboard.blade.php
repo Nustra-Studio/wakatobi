@@ -309,7 +309,7 @@
             <div class="row mt-3">
               <!-- Picture Slider  -->
               <div class="col-lg-6">
-                <div id="carouselExampleIndicators" class="carousel slide">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -342,7 +342,7 @@
 
                     @endphp
                     @if($i == 0)
-                    <div class="carousel-item active pb-5 ">
+                    <div class="carousel-item active pb-5 " data-bs-interval="4000">
                       <div class="card pb-5">
                         <img src="{{asset('images/berita/'.$berita->gambar)}}" class="card-img" alt="...">
                         <div class="card-img-overlay card-container custome-card" >
@@ -356,7 +356,7 @@
                       </div>
                     </div>
                     @else
-                    <div class="carousel-item pb-5">
+                    <div class="carousel-item pb-5" data-bs-interval="4000">
                       <div class="card pb-5">
                         <img src="{{asset('images/berita/'.$berita->gambar)}}" class="card-img" alt="...">
                         <div class="card-img-overlay card-container custome-card" >
