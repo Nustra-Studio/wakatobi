@@ -324,7 +324,7 @@
                           }
                           @media only screen and (min-width: 600px) {
                             .custome-card{
-                              top: 72%;
+                              top: 70%;
                               buttom: auto;
                             }
                           }
@@ -345,7 +345,6 @@
                     <div class="carousel-item active pb-5 ">
                       <div class="card pb-5">
                         <img src="{{asset('images/berita/'.$berita->gambar)}}" class="card-img" alt="...">
-                     
                         <div class="card-img-overlay card-container custome-card" >
                           <h5 class="card-title">{{$berita->judul}}</h5>
                           <div class="d-flex">
@@ -395,146 +394,18 @@
                   <a href="">Lihat Semua</a>
                 </div>
                 <div class="news-content-container">
-                  <div class="news-content-item d-flex">
-                    <img class="frame" src="img/image12.png" alt="">
-                    <div class="news-content-text">
-                      <h6>Bersinergi Kembangkan Wakatobi</h6>
-                      <div class="d-flex">
-                        <img src="img/date_range.png" alt="">
-                        <p class="card-text">Hari ini </p>
+                    @foreach ($data as $berita)
+                    <div class="news-content-item d-flex">
+                      <img class="frame" src="{{asset('images/berita/'.$berita->gambar)}}" alt="">
+                      <div class="news-content-text">
+                        <h6>{{$berita->judul}}</h6>
+                        <div class="d-flex">
+                          <img src="img/date_range.png" alt="">
+                          <p class="card-text">{{$tanggal}} </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="news-content-item d-flex">
-                    <img class="frame" src="img/image12.png" alt="">
-                    <div class="news-content-text">
-                      <h6>Bersinergi Kembangkan Wakatobi</h6>
-                      <div class="d-flex">
-                        <img src="img/date_range.png" alt="">
-                        <p class="card-text">Hari ini </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news-content-item d-flex">
-                    <img class="frame" src="img/image12.png" alt="">
-                    <div class="news-content-text">
-                      <h6>Bersinergi Kembangkan Wakatobi</h6>
-                      <div class="d-flex">
-                        <img src="img/date_range.png" alt="">
-                        <p class="card-text">Hari ini </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news-content-item d-flex">
-                    <img class="frame" src="img/image12.png" alt="">
-                    <div class="news-content-text">
-                      <h6>Bersinergi Kembangkan Wakatobi</h6>
-                      <div class="d-flex">
-                        <img src="img/date_range.png" alt="">
-                        <p class="card-text">Hari ini </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news-content-item d-flex">
-                    <img class="frame" src="img/image12.png" alt="">
-                    <div class="news-content-text">
-                      <h6>Bersinergi Kembangkan Wakatobi</h6>
-                      <div class="d-flex">
-                        <img src="img/date_range.png" alt="">
-                        <p class="card-text">Hari ini </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news-content-item d-flex">
-                    <img class="frame" src="img/image12.png" alt="">
-                    <div class="news-content-text">
-                      <h6>Bersinergi Kembangkan Wakatobi</h6>
-                      <div class="d-flex">
-                        <img src="img/date_range.png" alt="">
-                        <p class="card-text">Hari ini </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news-content-item d-flex">
-                    <img class="frame" src="img/image12.png" alt="">
-                    <div class="news-content-text">
-                      <h6>Bersinergi Kembangkan Wakatobi</h6>
-                      <div class="d-flex">
-                        <img src="img/date_range.png" alt="">
-                        <p class="card-text">Hari ini </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news-content-item d-flex">
-                    <img class="frame" src="img/image12.png" alt="">
-                    <div class="news-content-text">
-                      <h6>Bersinergi Kembangkan Wakatobi</h6>
-                      <div class="d-flex">
-                        <img src="img/date_range.png" alt="">
-                        <p class="card-text">Hari ini </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news-content-item d-flex">
-                    <img class="frame" src="img/image12.png" alt="">
-                    <div class="news-content-text">
-                      <h6>Bersinergi Kembangkan Wakatobi</h6>
-                      <div class="d-flex">
-                        <img src="img/date_range.png" alt="">
-                        <p class="card-text">Hari ini </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news-content-item d-flex">
-                    <img class="frame" src="img/image12.png" alt="">
-                    <div class="news-content-text">
-                      <h6>Bersinergi Kembangkan Wakatobi</h6>
-                      <div class="d-flex">
-                        <img src="img/date_range.png" alt="">
-                        <p class="card-text">Hari ini </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news-content-item d-flex">
-                    <img class="frame" src="img/image12.png" alt="">
-                    <div class="news-content-text">
-                      <h6>Bersinergi Kembangkan Wakatobi</h6>
-                      <div class="d-flex">
-                        <img src="img/date_range.png" alt="">
-                        <p class="card-text">Hari ini </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news-content-item d-flex">
-                    <img class="frame" src="img/image12.png" alt="">
-                    <div class="news-content-text">
-                      <h6>Bersinergi Kembangkan Wakatobi</h6>
-                      <div class="d-flex">
-                        <img src="img/date_range.png" alt="">
-                        <p class="card-text">Hari ini </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news-content-item d-flex">
-                    <img class="frame" src="img/image12.png" alt="">
-                    <div class="news-content-text">
-                      <h6>Bersinergi Kembangkan Wakatobi</h6>
-                      <div class="d-flex">
-                        <img src="img/date_range.png" alt="">
-                        <p class="card-text">Hari ini </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news-content-item d-flex">
-                    <img class="frame" src="img/image12.png" alt="">
-                    <div class="news-content-text">
-                      <h6>Bersinergi Kembangkan Wakatobi</h6>
-                      <div class="d-flex">
-                        <img src="img/date_range.png" alt="">
-                        <p class="card-text">Hari ini </p>
-                      </div>
-                    </div>
-                  </div>
+                    @endforeach
                 </div>
               </div>
             </div>
