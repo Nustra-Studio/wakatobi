@@ -426,7 +426,7 @@
                     @php $i=0; @endphp
                     @foreach($data3 as $galeri)
                     @php
-                        $date = $galeri>created_at;
+                        $date = $galeri->created_at;
                         $dateTime = new DateTime($date);
                         $dayOfWeek = $dateTime->format('w');
                         $dayIndo = $days[$dayOfWeek];
