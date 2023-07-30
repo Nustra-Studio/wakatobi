@@ -39,16 +39,17 @@ class DashboardController extends Controller
     {
         $this->getvisitor($request);
 
-        $data_berita = BeritaModel::select(DB::raw('berita.*,kategori_berita.nama as katberita'))
-        ->leftjoin('kategori_berita','kategori_berita.id','=','berita.id_kategori')
-        ->orderby('berita.id','desc')
-        ->limit(10)
+        $data_berita = BeritaModel::select(DB::raw('berita.*, kategori_berita.nama as katberita'))
+        ->leftJoin('kategori_berita', 'kategori_berita.id', '=', 'berita.id_kategori')
+        ->orderBy('berita.created_at', 'desc') // Mengurutkan berdasarkan tanggal pembuatan (created_at)
+        ->take(10) // Mengambil 3 data terbaru
         ->get();
-        $data_artikel = ArtikelModel::select(DB::raw('artikel.*,kategori_artikel.nama as katartikel'))
-        ->leftjoin('kategori_artikel','kategori_artikel.id','=','artikel.id_kategori')
-        ->orderby('artikel.id','desc')
-        ->limit(4)
+        $data_artikel = ArtikelModel::select(DB::raw('artikel.*, kategori_artikel.nama as katartikel'))
+        ->leftJoin('kategori_artikel', 'kategori_artikel.id', '=', 'artikel.id_kategori')
+        ->orderBy('artikel.created_at', 'desc')
+        ->limit(3)
         ->get();
+    
         $data_galeri = GaleriModel::select(DB::raw('galeri.*'))
         ->orderby('galeri.id','desc')
         ->limit(4)
