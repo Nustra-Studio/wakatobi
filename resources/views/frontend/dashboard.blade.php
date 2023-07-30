@@ -360,7 +360,7 @@
                       <div class="card pb-5">
                         <img src="{{asset('images/berita/'.$berita->gambar)}}" class="card-img" alt="...">
                         <div class="card-img-overlay card-container custome-card" >
-                          <h5 class="card-title">{{$berita->judul}}</h5>
+                          <a href="{{ url('/detail-berita/'.$berita->slug)}}" class="card-title">{{$berita->judul}}</a>
                           <div class="d-flex">
                             <img src="img/Vector.png" alt="">
                         
@@ -389,7 +389,6 @@
                 <div class="kategori d-flex">
                   <div class="kategori-btn d-flex">
                     <div class="btn1 me-4">Terbaru</div>
-                    <div class="btn2">Populer</div>
                   </div>
                   <a href="">Lihat Semua</a>
                 </div>
@@ -401,7 +400,7 @@
                     }
                   </style>
                     @foreach ($data as $berita)
-                    <a href="" class="news-content-item d-flex">
+                    <a href="{{ url('/detail-berita/'.$berita->slug)}}" class="news-content-item d-flex">
                       <img class="frame" src="{{asset('images/berita/'.$berita->gambar)}}" alt="" width="18%">
                       <div class="news-content-text">
                         <h6>{{$berita->judul}}</h6>
