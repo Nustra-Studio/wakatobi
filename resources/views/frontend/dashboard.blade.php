@@ -324,7 +324,7 @@
                           }
                           @media only screen and (min-width: 600px) {
                             .custome-card{
-                              top: 70%;
+                              top: 72%;
                               buttom: auto;
                             }
                           }
