@@ -422,7 +422,7 @@
                     <div class="row">
                         <h3>Galeri</h3>
                         <p>Kumpulan Galeri dari Kegiatan Pemerintahan Kabupaten Wakatobi</p>
-                        <a class="text-end" href=""> Lihat Semua</a>
+                        <a style="color: #E9EEEF"  class="text-end" href=""> Lihat Semua</a>
                     </div>
                     <div class="row mt-3">
                     <div class="col-lg-6">
