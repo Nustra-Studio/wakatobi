@@ -396,7 +396,7 @@
                 <div class="news-content-container">
                     @foreach ($data as $berita)
                     <div class="news-content-item d-flex">
-                      <img class="frame" src="{{asset('images/berita/'.$berita->gambar)}}" alt="" width="10%">
+                      <img class="frame" src="{{asset('images/berita/'.$berita->gambar)}}" alt="" width="18%">
                       <div class="news-content-text">
                         <h6>{{$berita->judul}}</h6>
                         <div class="d-flex">
