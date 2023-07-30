@@ -273,7 +273,7 @@
         </div> --}}
         <section class="container" id="berita">
             <h3>Berita dan Siaran</h3>
-            <p style="color: #AAAAAA;">Berita dan informasi seputar Pemerintahan Kabupaten Wakatobi</p>
+            <p style="color: #AAAAAA; ">Berita dan informasi seputar Pemerintahan Kabupaten Wakatobi</p>
             <div class="row mt-3">
               <!-- Picture Slider  -->
               <div class="col-lg-6">
@@ -284,10 +284,10 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   </div>
                   <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active ">
                       <div class="card">
                         <img src="img/CardPicture.png" class="card-img" alt="...">
-                        <div class="card-img-overlay card-container">
+                        <div class="card-img-overlay card-container pb-3">
                           <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
                           <div class="d-flex">
                             <img src="img/Vector.png" alt="">
