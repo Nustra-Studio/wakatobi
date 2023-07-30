@@ -346,7 +346,7 @@
                       <div class="card pb-5">
                         <img src="{{asset('images/berita/'.$berita->gambar)}}" class="card-img" alt="...">
                         <div class="card-img-overlay card-container custome-card" >
-                          <h5 class="card-title">{{$berita->judul}}</h5>
+                          <a href="{{ url('/detail-berita/'.$berita->slug)}}" class="card-title">{{$berita->judul}}</a>
                           <div class="d-flex">
                             <img src="img/Vector.png" alt="">
                             <p class="card-text">{{$tanggal}}</p>
