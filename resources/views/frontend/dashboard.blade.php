@@ -462,16 +462,8 @@
                             <div class=" galeri-item d-none"><img src="{{asset('images/galeri/'.$galeri->gambar)}}" alt=""></div>
                             @elseif ($i >= 1)
                             <a href="">
-                                <div class="card card-galeri">
+                                <div class="card card-galeri my-2">
                                     <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
-                                    <div class="card-img-overlay card-container">
-                                    <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
-                                    <div class="d-flex">
-                                        <img src="img/Vector.png" alt="">
-                                        <p class="card-text">Rabu, 05 Juli 2023 </p>
-                                    </div>
-                                    
-                                    </div>
                                 </div>
                                 </a>
                             @endif
