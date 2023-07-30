@@ -486,18 +486,38 @@
                 <a id="nextBtn" type="button"><img src="img/Frame74.png" alt=""></a>
                 </div>
             </div>
-                <div class="row mt-3">
-                    <div class="col-lg-5 artikel-img">
-                    <img src="img/Frame72.png" alt="">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                    <!-- Isi Carousel Slide -->
+                    <div class="row mt-3">
+                        <div class="col-lg-5 artikel-img">
+                        <img src="img/Frame72.png" alt="">
+                        </div>
+                        <div class="col-lg-7 box">
+                        <h3>HUT Republik Indonesia yang ke-77</h3>
+                        <p>Hari Ulang Tahun Republik Indonesia ke-77 adalah perayaan yang memperingati kemerdekaan Indonesia dari penjajahan. Setiap tanggal 17 Agustus, seluruh rakyat Indonesia merayakan dengan semangat dan kebanggaan.</p>
+                        <p>
+                            Perayaan ini mengingatkan kita akan perjuangan para pahlawan yang telah berjuang untuk memperoleh kemerdekaan. Kemerdekaan Indonesia yang kita nikmati saat ini adalah hasil dari perjuangan dan pengorbanan mereka.
+                        </p>
+                        </div>
                     </div>
-                    <div class="col-lg-7  box">
-                    <h3>HUT Republik Indonesia yang ke-77</h3>
-                    <p>Hari Ulang Tahun Republik Indonesia ke-77 adalah perayaan yang memperingati kemerdekaan Indonesia dari penjajahan. Setiap tanggal 17 Agustus, seluruh rakyat Indonesia merayakan dengan semangat dan kebanggaan.</p>
-                    <p>
-                        Perayaan ini mengingatkan kita akan perjuangan para pahlawan yang telah berjuang untuk memperoleh kemerdekaan. Kemerdekaan Indonesia yang kita nikmati saat ini adalah hasil dari perjuangan dan pengorbanan mereka.
-                    </p>
+                    <!-- Tambahkan lebih banyak slide jika diperlukan -->
+                    <div class="row mt-3">
+                        <div class="col-lg-5 artikel-img">
+                        <img src="img/Frame72.png" alt="">
+                        </div>
+                        <div class="col-lg-7 box">
+                        <h3>HUT Republik Indonesia yang ke-78</h3>
+                        <p>Hari Ulang Tahun Republik Indonesia ke-77 adalah perayaan yang memperingati kemerdekaan Indonesia dari penjajahan. Setiap tanggal 17 Agustus, seluruh rakyat Indonesia merayakan dengan semangat dan kebanggaan.</p>
+                        <p>
+                            Perayaan ini mengingatkan kita akan perjuangan para pahlawan yang telah berjuang untuk memperoleh kemerdekaan. Kemerdekaan Indonesia yang kita nikmati saat ini adalah hasil dari perjuangan dan pengorbanan mereka.
+                        </p>
+                        </div>
                     </div>
+                    </div>
+
                 </div>
+                
             </div>
             </section>
         <!-- Section 6 -->
