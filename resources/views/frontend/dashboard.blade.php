@@ -423,10 +423,21 @@
                     <p>Kumpulan Galeri dari Kegiatan Pemerintahan Kabupaten Wakatobi</p>
                     <div class="row mt-3">
                     <div class="col-lg-6">
+                    @php $i=0; @endphp
+                    @foreach($data3 as $galeri)
+                    @php
+                        $date = $berita->created_at;
+                        $dateTime = new DateTime($date);
+                        $dayOfWeek = $dateTime->format('w');
+                        $dayIndo = $days[$dayOfWeek];
+                        $monthIndo = $months[intval($dateTime->format('m')) - 1];
+                        $tanggal = $dayIndo . ', ' . $dateTime->format('d') . ' ' . $monthIndo . ' ' . $dateTime->format('Y');
+
+                    @endphp
+                    @if($i == 0)
                         <a href="">
                         <div class="card card-galeri">
-                            <img src="img/image4.png" class="card-img" alt="...">
-                            <img class="yt" src="img/logos_youtube-icon.png" alt="">
+                            <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
                             <div class="card-img-overlay card-container">
                             <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
                             <div class="d-flex">
@@ -437,10 +448,23 @@
                             </div>
                         </div>
                         </a>
+                        @endif
+                        @php $i++; @endphp
+                        @endforeach
+                        </a>
                     </div>
                     <div class="col-lg-6 galeri-items">
-                        <div class=" galeri-item"><img src="img/Frame29.png" alt=""></div>
-                        <div class="  galeri-item"><img src="img/Frame30.png" alt=""></div>
+                        @php
+                            $i=0;
+                        @endphp
+                        @foreach($data3 as $galeri)
+                            @if($i == 0)
+                            <div class=" galeri-item d-none"><img src="img/Frame29.png" alt=""></div>
+                            @else
+                            <div class=" galeri-item"><img src="{{asset('images/galeri/'.$galeri->gambar)}} alt=""></div>
+                            @endif
+                            @php $i++; @endphp
+                        @endforeach
                     </div>
                     </div>
                 </div>
