@@ -461,7 +461,7 @@
                             @if($i == 0)
                             <div class=" galeri-item d-none"><img src="{{asset('images/galeri/'.$galeri->gambar)}}" alt=""></div>
                             @elseif ($i >= 1)
-                            <div class=" galeri-item"><img src="{{asset('images/galeri/'.$galeri->gambar)}}" alt=""></div>
+                            <div class=" galeri-item" style="width: 50%"><img src="{{asset('images/galeri/'.$galeri->gambar)}}" alt=""></div>
                             @endif
                             @php $i++; @endphp
                         @endforeach
