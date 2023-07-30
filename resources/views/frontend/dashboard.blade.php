@@ -569,8 +569,16 @@
 
     <script>
         let nav = document.querySelector('nav')
+        let berita = document.querySelector('#ba')
+        let galeri = document.querySelector('#gi')
+        let tentang = document.querySelector('#tk')
+        let artikel = document.querySelector('#al')
         function remove() {
             nav.classList.remove('bg-dark', 'shadow')
+            berita.href = '#berita'
+            galeri.href = '#galeri'
+            tentang.href = '#tentang-kami'
+            artikel.href = '#artikel'
         }
         remove()
         window.addEventListener('scroll',function () {

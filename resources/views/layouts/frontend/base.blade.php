@@ -133,10 +133,10 @@
                     Profile Data
                   </a>
                 </li>
-              <li class="nav-item me-4"><a href="#berita" class="nav-link text-white">Berita</a></li>
-              <li class="nav-item me-4"><a href="#galeri" class="nav-link text-white">Galeri</a></li>
-              <li class="nav-item me-4"><a href="#artikel" class="nav-link text-white">Artikel</a></li>
-              <li class="nav-item me-4"><a href="#tentang-kami" class="nav-link text-white">Tentang Kami</a></li>
+              <li class="nav-item me-4"><a href="{{url('semua-berita')}}" id="ba" class="nav-link text-white">Berita</a></li>
+              <li class="nav-item me-4"><a href="{{url('semua-galeri')}}" id="gi" class="nav-link text-white">Galeri</a></li>
+              <li class="nav-item me-4"><a href="{{url('semua-artikel')}}" id="al" class="nav-link text-white">Artikel</a></li>
+              <li class="nav-item me-4"><a href="{{url('tentang-kami')}}" id="tk" class="nav-link text-white">Tentang Kami</a></li>
           </ul>
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <a href="{{url('login')}}" class=" btn button text-center mt-md-2 me-xl-4">Login</a>
