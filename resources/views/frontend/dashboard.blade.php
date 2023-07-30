@@ -461,7 +461,19 @@
                             @if($i == 0)
                             <div class=" galeri-item d-none"><img src="{{asset('images/galeri/'.$galeri->gambar)}}" alt=""></div>
                             @elseif ($i >= 1)
-                            <div class=" galeri-item" style="width: 50%"><img src="{{asset('images/galeri/'.$galeri->gambar)}}" alt=""></div>
+                            <a href="">
+                                <div class="card card-galeri">
+                                    <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                                    <div class="card-img-overlay card-container">
+                                    <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
+                                    <div class="d-flex">
+                                        <img src="img/Vector.png" alt="">
+                                        <p class="card-text">Rabu, 05 Juli 2023 </p>
+                                    </div>
+                                    
+                                    </div>
+                                </div>
+                                </a>
                             @endif
                             @php $i++; @endphp
                         @endforeach
