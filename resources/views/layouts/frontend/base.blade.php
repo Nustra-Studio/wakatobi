@@ -111,7 +111,7 @@
       @endphp
       @foreach($webset as $ws)
       <img src="{{asset('images/setting/'.$ws->logo)}}" alt=""  width="45">
-      <span id="textheader" style="font-size:15px;">{{$ws->nama}}</span>
+      <span class="mx-2" id="textheader" style="font-size:18px;">{{$ws->nama}}</span>
     
       @endforeach
       </a>
@@ -138,7 +138,10 @@
               <li class="nav-item me-4"><a href="#artikel" class="nav-link text-white">Artikel</a></li>
               <li class="nav-item me-4"><a href="#tentang-kami" class="nav-link text-white">Tentang Kami</a></li>
           </ul>
-          <a href="{{url('login')}}" class="button text-center me-4">Login</a>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="{{url('login')}}" class=" btn button text-center me-4">Login</a>
+          </div>
+      
       </div>
   </div>
 </nav>
