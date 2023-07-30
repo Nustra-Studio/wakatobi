@@ -318,7 +318,7 @@
                   <style>
                           @media only screen and (max-width: 600px) {
                             .custome-card{
-                              top: 63%;
+                              top: 61%;
                               buttom: auto;
                             }
                           }
@@ -336,8 +336,8 @@
 
                     @endphp
                     @if($i == 0)
-                    <div class="carousel-item active ">
-                      <div class="card">
+                    <div class="carousel-item active pb-5 ">
+                      <div class="card pb-5">
                         <img src="{{asset('images/berita/'.$berita->gambar)}}" class="card-img" alt="...">
                      
                         <div class="card-img-overlay card-container custome-card" >
@@ -351,8 +351,8 @@
                       </div>
                     </div>
                     @else
-                    <div class="carousel-item">
-                      <div class="card">
+                    <div class="carousel-item pb-5">
+                      <div class="card pb-5">
                         <img src="{{asset('images/berita/'.$berita->gambar)}}" class="card-img" alt="...">
                         <div class="card-img-overlay card-container custome-card" >
                           <h5 class="card-title">{{$berita->judul}}</h5>
