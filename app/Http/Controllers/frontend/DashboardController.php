@@ -42,7 +42,7 @@ class DashboardController extends Controller
         $data_berita = BeritaModel::select(DB::raw('berita.*,kategori_berita.nama as katberita'))
         ->leftjoin('kategori_berita','kategori_berita.id','=','berita.id_kategori')
         ->orderby('berita.id','desc')
-        ->limit(8)
+        ->limit(10)
         ->get();
         $data_artikel = ArtikelModel::select(DB::raw('artikel.*,kategori_artikel.nama as katartikel'))
         ->leftjoin('kategori_artikel','kategori_artikel.id','=','artikel.id_kategori')

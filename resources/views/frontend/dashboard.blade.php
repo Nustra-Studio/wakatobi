@@ -1,7 +1,39 @@
 @extends('layouts/frontend/base')
 
 @section('content')
+@php
+    use App\Models\BeritaModel;
+    $beritas =  BeritaModel::select(DB::raw('berita.*,kategori_berita.nama as katberita'))
+        ->leftjoin('kategori_berita','kategori_berita.id','=','berita.id_kategori')
+        ->orderby('berita.id','desc')
+        ->limit(3)
+        ->get();
+    $days = array(
+          'Minggu', // Sunday
+          'Senin',  // Monday
+          'Selasa', // Tuesday
+          'Rabu',   // Wednesday
+          'Kamis',  // Thursday
+          'Jumat',  // Friday
+          'Sabtu'   // Saturday
+      );
 
+      // Define an array for the names of the months in Bahasa Indonesia
+      $months = array(
+          'Januari',   // January
+          'Februari',  // February
+          'Maret',     // March
+          'April',     // April
+          'Mei',       // May
+          'Juni',      // June
+          'Juli',      // July
+          'Agustus',   // August
+          'September', // September
+          'Oktober',   // October
+          'November',  // November
+          'Desember'   // December
+      );
+@endphp
 <body>
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -282,12 +314,8 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active ">
-                      <div class="card">
-                        <img src="img/CardPicture.png" class="card-img" alt="...">
-                        <style>
+                  </div>   
+                  <style>
                           @media only screen and (max-width: 600px) {
                             .custome-card{
                               top: 64%;
@@ -300,43 +328,52 @@
                               buttom: auto;
                             }
                           }
-                        </style>
+                  </style>
+                  <div class="carousel-inner">
+                    @php $i=0; @endphp
+                    @foreach($beritas as $berita)
+                    @php
+                      $date = $berita->created_at;
+                      $dateTime = new DateTime($date);
+                      $dayOfWeek = $dateTime->format('w');
+                      $dayIndo = $days[$dayOfWeek];
+                      $monthIndo = $months[intval($dateTime->format('m')) - 1];
+                      $tanggal = $dayIndo . ', ' . $dateTime->format('d') . ' ' . $monthIndo . ' ' . $dateTime->format('Y');
+
+                    @endphp
+                    @if($i == 0)
+                    <div class="carousel-item active ">
+                      <div class="card">
+                        <img src="{{asset('images/berita/'.$berita->gambar)}}" class="card-img" alt="...">
+                     
                         <div class="card-img-overlay card-container custome-card" >
-                          <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
+                          <h5 class="card-title">{{$berita->judul}}</h5>
                           <div class="d-flex">
                             <img src="img/Vector.png" alt="">
-                            <p class="card-text">Rabu, 05 Juli 2023 </p>
+                            <p class="card-text">{{$tanggal}}</p>
                           </div>
                           
                         </div>
                       </div>
                     </div>
+                    @else
                     <div class="carousel-item">
                       <div class="card">
-                        <img src="img/CardPicture.png" class="card-img" alt="...">
-                        <div class="card-img-overlay card-container">
-                          <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
+                        <img src="{{asset('images/berita/'.$berita->gambar)}}" class="card-img" alt="...">
+                        <div class="card-img-overlay card-container custome-card" >
+                          <h5 class="card-title">{{$berita->judul}}</h5>
                           <div class="d-flex">
                             <img src="img/Vector.png" alt="">
-                            <p class="card-text">Rabu, 05 Juli 2023 </p>
+                        
+                            <p class="card-text">{{$tanggal}}</p>
                           </div>
                           
                         </div>
                       </div>
                     </div>
-                    <div class="carousel-item">
-                      <div class="card">
-                        <img src="img/CardPicture.png" class="card-img" alt="...">
-                        <div class="card-img-overlay card-container">
-                          <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
-                          <div class="d-flex">
-                            <img src="img/Vector.png" alt="">
-                            <p class="card-text">Rabu, 05 Juli 2023 </p>
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
+                    @endif
+                    @php $i++; @endphp
+                    @endforeach
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
