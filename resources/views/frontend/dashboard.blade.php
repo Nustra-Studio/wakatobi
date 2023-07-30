@@ -439,7 +439,7 @@
                     @endphp
                     @if($i == 0)
  
-                        <div class="card card-galeri">
+                        <div class="card card-galeri pb-5 ">
                             <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
                             <div class="card-img-overlay card-container">
                             <h5 class="card-title">{{$galeri->judul}}</h5>
