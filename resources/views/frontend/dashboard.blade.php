@@ -322,6 +322,12 @@
                               buttom: auto;
                             }
                           }
+                          @media only screen and (min-width: 600px) {
+                            .custome-card{
+                              top: 70%;
+                              buttom: auto;
+                            }
+                          }
                   </style>
                   <div class="carousel-inner">
                     @php $i=0; @endphp
