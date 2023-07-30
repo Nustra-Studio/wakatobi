@@ -486,6 +486,15 @@
                 <a id="nextBtn" type="button"><img src="img/Frame74.png" alt=""></a>
                 </div>
             </div>
+            <style>
+                .carousel-container {
+                    overflow: hidden;
+                    position: relative;
+                    }
+                    .carousel-slide {
+                    display: flex;
+                    }
+            </style>
                 <div class="carousel-container">
                     <div class="carousel-slide">
                     <!-- Isi Carousel Slide -->
