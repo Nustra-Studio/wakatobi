@@ -421,6 +421,7 @@
                 <div class="container">
                     <h3>Galeri</h3>
                     <p>Kumpulan Galeri dari Kegiatan Pemerintahan Kabupaten Wakatobi</p>
+                    <a class="text-end" href="{{url('semua-galeri')}}">Lihat Semua</a>
                     <div class="row mt-3">
                     <div class="col-lg-6">
                     @php $i=0; @endphp
