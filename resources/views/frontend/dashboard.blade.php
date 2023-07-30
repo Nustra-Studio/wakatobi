@@ -612,7 +612,7 @@
             let counter = 0;
 
             function slideArtikel() {
-            artikelSlide.style.transform = `translateX(-${counter * 100}%)`;
+            artikelSlide.style.transform = `translateX(-${counter * 15}%)`;
             rows.forEach((row, index) => {
                 row.style.display = index === counter ? "block" : "none";
             });
