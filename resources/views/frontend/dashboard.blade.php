@@ -2,7 +2,7 @@
 
 @section('content')
 @php
-    use App\Models\BeritaModel;
+    use App\models\backend\BeritaModel;
     $beritas =  BeritaModel::select(DB::raw('berita.*,kategori_berita.nama as katberita'))
         ->leftjoin('kategori_berita','kategori_berita.id','=','berita.id_kategori')
         ->orderby('berita.id','desc')
