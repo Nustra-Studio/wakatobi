@@ -394,9 +394,15 @@
                   <a href="">Lihat Semua</a>
                 </div>
                 <div class="news-content-container">
+                  <style>
+                    a{
+                      text-decoration: none;
+                      color:#212529;
+                    }
+                  </style>
                     @foreach ($data as $berita)
                     <a href="" class="news-content-item d-flex">
-                      <img class="frame" src="{{asset('images/berita/'.$berita->gambar)}}" alt="" width="21%">
+                      <img class="frame" src="{{asset('images/berita/'.$berita->gambar)}}" alt="" width="18%">
                       <div class="news-content-text">
                         <h6>{{$berita->judul}}</h6>
                         <div class="d-flex">
