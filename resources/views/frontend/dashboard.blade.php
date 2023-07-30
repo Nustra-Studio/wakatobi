@@ -421,7 +421,6 @@
                 <div class="container">
                     <h3>Galeri</h3>
                     <p>Kumpulan Galeri dari Kegiatan Pemerintahan Kabupaten Wakatobi</p>
-                    <a class="text-end" href="{{url('semua-galeri')}}">Lihat Semua</a>
                     <div class="row mt-3">
                     <div class="col-lg-6">
                     @php $i=0; @endphp
@@ -452,7 +451,12 @@
                         @endif
                         @php $i++; @endphp
                         @endforeach
-
+                        <div class="kategori d-flex">
+                            <div class="kategori-btn d-flex">
+                            <div class="btn1 me-4">Terbaru</div>
+                            </div>
+                            <a href="{{url('semua-berita')}}">Lihat Semua</a>
+                        </div>
                     </div>
                     <div class="col-lg-6 galeri-items">
                         @php
