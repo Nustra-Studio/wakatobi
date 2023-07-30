@@ -154,6 +154,12 @@ margin-top: 35;
     border: 10px;
     margin-bottom: 45px;
 }
+.galeri-item img{
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 10px;
+    margin-right: 15px;
+}
 
 #artikel {
     /* height: 90vh; */
