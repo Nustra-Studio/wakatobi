@@ -139,7 +139,7 @@
               <li class="nav-item me-4"><a href="#tentang-kami" class="nav-link text-white">Tentang Kami</a></li>
           </ul>
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <a href="{{url('login')}}" class=" btn button text-center mt-md-2 me-4">Login</a>
+            <a href="{{url('login')}}" class=" btn button text-center mt-md-2 me-xl-4">Login</a>
           </div>
       
       </div>
