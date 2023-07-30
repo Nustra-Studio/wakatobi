@@ -581,7 +581,7 @@
             artikel.href = '#artikel'
         }
         remove()
-        function artikel(){
+
             const artikelSlide = document.querySelector(".carousel-slide");
                 const prevBtn = document.getElementById("prevBtn");
                 const nextBtn = document.getElementById("nextBtn");
@@ -604,8 +604,6 @@
                 slideArtikel();
                 });
 
-        }
-        artikel()
         window.addEventListener('scroll',function () {
         nav.classList.remove('bg-dark', 'shadow')
         if (window.pageYOffset > 100) {
