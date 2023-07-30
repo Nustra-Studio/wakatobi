@@ -287,7 +287,21 @@
                     <div class="carousel-item active ">
                       <div class="card">
                         <img src="img/CardPicture.png" class="card-img" alt="...">
-                        <div class="card-img-overlay card-container pb-5" style="buttom:auto; top:65%; ">
+                        <style>
+                          @media only screen and (max-width: 600px) {
+                            .custome-card{
+                              top: 64%;
+                              buttom: auto;
+                            }
+                          }
+                          @media only screen and (min-width: 600px) {
+                            .custome-card{
+                              top: 77%;
+                              buttom: auto;
+                            }
+                          }
+                        </style>
+                        <div class="card-img-overlay card-container custome-card" >
                           <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
                           <div class="d-flex">
                             <img src="img/Vector.png" alt="">
