@@ -390,7 +390,7 @@
                   <div class="kategori-btn d-flex">
                     <div class="btn1 me-4">Terbaru</div>
                   </div>
-                  <a href="">Lihat Semua</a>
+                  <a href="{{url('semua-berita')}}">Lihat Semua</a>
                 </div>
                 <div class="news-content-container">
                   <style>
