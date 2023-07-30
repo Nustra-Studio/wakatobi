@@ -318,13 +318,7 @@
                   <style>
                           @media only screen and (max-width: 600px) {
                             .custome-card{
-                              top: 64%;
-                              buttom: auto;
-                            }
-                          }
-                          @media only screen and (min-width: 600px) {
-                            .custome-card{
-                              top: 77%;
+                              top: 63%;
                               buttom: auto;
                             }
                           }
