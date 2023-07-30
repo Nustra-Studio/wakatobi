@@ -377,42 +377,42 @@
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
                 </div>
-              </div>
-              <!-- News Content -->
-              <div class="col-lg-6">
-                <div class="kategori d-flex">
-                  <div class="kategori-btn d-flex">
-                    <div class="btn1 me-4">Terbaru</div>
-                  </div>
-                  <a href="{{url('semua-berita')}}">Lihat Semua</a>
-                </div>
-                <div class="news-content-container">
-                  <style>
-                    a{
-                      text-decoration: none;
-                      color:#212529;
-                    }
-                  </style>
-                    @foreach ($data as $berita)
-                    <a href="{{ url('/detail-berita/'.$berita->slug)}}" class="news-content-item d-flex">
-                      <img class="frame" src="{{asset('images/berita/'.$berita->gambar)}}" alt="" width="18%">
-                      <div class="news-content-text">
-                        <h6>{{$berita->judul}}</h6>
-                        <div class="d-flex">
-                          <img src="img/date_range.png" alt="">
-                          <p class="card-text">{{$tanggal}} </p>
+                <!-- News Content -->
+                <div class="col-lg-6">
+                    <div class="kategori d-flex">
+                    <div class="kategori-btn d-flex">
+                        <div class="btn1 me-4">Terbaru</div>
+                    </div>
+                    <a href="{{url('semua-berita')}}">Lihat Semua</a>
+                    </div>
+                    <div class="news-content-container">
+                    <style>
+                        a{
+                        text-decoration: none;
+                        color:#212529;
+                        }
+                    </style>
+                        @foreach ($data as $berita)
+                        <a href="{{ url('/detail-berita/'.$berita->slug)}}" class="news-content-item d-flex">
+                        <img class="frame" src="{{asset('images/berita/'.$berita->gambar)}}" alt="" width="18%">
+                        <div class="news-content-text">
+                            <h6>{{$berita->judul}}</h6>
+                            <div class="d-flex">
+                            <img src="img/date_range.png" alt="">
+                            <p class="card-text">{{$tanggal}} </p>
+                            </div>
                         </div>
-                      </div>
-                    </a>
-                    @endforeach
+                        </a>
+                        @endforeach
+                    </div>
                 </div>
-              </div>
             </div>
         </section>
     <!-- Section 4 -->
@@ -464,7 +464,7 @@
                             <div class=" galeri-item d-none"><img src="{{asset('images/galeri/'.$galeri->gambar)}}" alt=""></div>
                             @elseif ($i >= 1)
                                 <div class="card card-galeri my-2">
-                                    <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                                    <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img img-galeri" alt="...">
                                 </div>
                             @endif
                             @php $i++; @endphp
