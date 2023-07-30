@@ -24,7 +24,7 @@
                 <div class="container-fluid">
                     <div class="card-body" style="background-color:none;">
                         <h5 class="card-title">
-                            {{$ws->deskripsi}}
+                            {!!$ws->deskripsi!!}
                         </h5>
 
                     </div>
