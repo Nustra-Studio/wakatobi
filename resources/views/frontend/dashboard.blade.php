@@ -458,10 +458,10 @@
                             $i=0;
                         @endphp
                         @foreach($data3 as $galeri)
-                            @if($i == 0)
+                            @if($i == 1)
                             <div class=" galeri-item d-none"><img src="img/Frame29.png" alt=""></div>
                             @else
-                            <div class=" galeri-item"><img src="{{asset('images/galeri/'.$galeri->gambar)}} alt=""></div>
+                            <div class=" galeri-item"><img src="{{asset('images/galeri/'.$galeri->gambar)}}" alt=""></div>
                             @endif
                             @php $i++; @endphp
                         @endforeach
