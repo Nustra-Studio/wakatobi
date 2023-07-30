@@ -611,27 +611,44 @@
         }
         remove()
 
-            const artikelSlide = document.querySelector(".carousel-slide");
-                const prevBtn = document.getElementById("prevBtn");
-                const nextBtn = document.getElementById("nextBtn");
-                let counter = 0;
+        const artikelSlide = document.querySelector(".carousel-slide");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const slides = artikelSlide.querySelectorAll(".row");
+        let counter = 0;
 
-                function slideArtikel() {
-                artikelSlide.style.transition = "transform 0.4s ease-in-out";
-                artikelSlide.style.transform = `translateX(-${counter * 100}%)`;
-                }
+        function hideAllSlides() {
+        slides.forEach(slide => {
+            slide.style.display = "none";
+        });
+        }
 
-                nextBtn.addEventListener("click", () => {
-                if (counter >= artikelSlide.childElementCount - 1) return;
-                counter++;
-                slideArtikel();
-                });
+        function showSlide(index) {
+        slides[index].style.display = "block";
+        }
 
-                prevBtn.addEventListener("click", () => {
-                if (counter <= 0) return;
-                counter--;
-                slideArtikel();
-                });
+        function slideArtikel() {
+        hideAllSlides();
+        artikelSlide.style.transition = "transform 0.4s ease-in-out";
+        artikelSlide.style.transform = `translateX(-${counter * 100}%)`;
+        showSlide(counter);
+        }
+
+        nextBtn.addEventListener("click", () => {
+        if (counter >= slides.length - 1) return;
+        counter++;
+        slideArtikel();
+        });
+
+        prevBtn.addEventListener("click", () => {
+        if (counter <= 0) return;
+        counter--;
+        slideArtikel();
+        });
+
+        // Tampilkan slide pertama saat halaman dimuat
+        slideArtikel();
+
 
         window.addEventListener('scroll',function () {
         nav.classList.remove('bg-dark', 'shadow')
