@@ -426,7 +426,7 @@
                     @php $i=0; @endphp
                     @foreach($data3 as $galeri)
                     @php
-                        $date = $berita->created_at;
+                        $date = $galeri>created_at;
                         $dateTime = new DateTime($date);
                         $dayOfWeek = $dateTime->format('w');
                         $dayIndo = $days[$dayOfWeek];
@@ -439,10 +439,10 @@
                         <div class="card card-galeri">
                             <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
                             <div class="card-img-overlay card-container">
-                            <h5 class="card-title">Bersinergi Kembangkan Wakatobi</h5>
+                            <h5 class="card-title">{{$galeri->judul}}</h5>
                             <div class="d-flex">
                                 <img src="img/Vector.png" alt="">
-                                <p class="card-text">Rabu, 05 Juli 2023 </p>
+                                <p class="card-text">{{$tanggal}}</p>
                             </div>
                             
                             </div>
