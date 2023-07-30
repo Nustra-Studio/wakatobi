@@ -105,13 +105,13 @@
 </nav> --}}
 <nav class="navbar bg-dark fixed-top navbar-expand-lg navbar-dark p-md-1">
   <div class="container">
-    <a class="navbar-brand ml-3" href="#">
+    <a class="navbar-brand ml-3" href="{{url('/')}}">
       @php
       $webset = DB::table('web_setting')->orderby('id','desc')->limit(1)->get();
       @endphp
       @foreach($webset as $ws)
-      <img src="{{asset('images/setting/'.$ws->logo)}}" alt=""  width="55">
-      <span id="textheader" style="font-size:20px;">{{$ws->nama}}</span>
+      <img src="{{asset('images/setting/'.$ws->logo)}}" alt=""  width="45">
+      <span id="textheader" style="font-size:15px;">{{$ws->nama}}</span>
     
       @endforeach
       </a>
