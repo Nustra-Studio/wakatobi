@@ -416,7 +416,7 @@
                             <img class="d-none d-md-block" src="img/date_range.png" alt="">
                             <style>
                                 .news-content-text p{
-                                    font-size: 2em;
+                                    font-size: 0.2em;
                                 }
                             </style>
                             <p class="card-text">{{$tanggal}} </p>
