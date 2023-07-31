@@ -421,7 +421,7 @@
                                 @media only screen and (max-width: 768px) {
                                     .card-text {
                                         margin-left: 0px;
-                                        font-size: 0.8em;
+                                        font-size: 0.5em;
                                     }
                                 }
                             </style>
