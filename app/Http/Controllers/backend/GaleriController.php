@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\backend;
-
+use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\models\backend\GaleriModel;
@@ -30,7 +30,7 @@ class GaleriController extends Controller
     }
 
     //=================================================================
-    use Illuminate\Support\Facades\Storage;
+
 
     public function store(Request $request)
     {
