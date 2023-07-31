@@ -419,7 +419,7 @@
                                     font-size: 1em;
                                 }
                                 @media only screen and (max-width: 768px) {
-                                    .card-text {
+                                    .news-content-text .card-text {
                                         margin-left: 0px;
                                         font-size: 0.5em;
                                     }
