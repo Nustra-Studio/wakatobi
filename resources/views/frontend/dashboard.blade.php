@@ -198,6 +198,9 @@
                     font-size: 20px;
                     font-weight: bold;
                     margin-top: 10px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
                 }
             </style>
             <div class="d-flex section-2-container">
