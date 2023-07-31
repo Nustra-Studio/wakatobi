@@ -423,6 +423,9 @@
                                         margin-left: 0px;
                                         font-size: 0.5em;
                                     }
+                                    .news-content-text p{
+                                    font-size: 0.8em;
+                                }
                                 }
                             </style>
                             <p class="card-text">{{$tanggal}} </p>
