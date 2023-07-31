@@ -50,8 +50,8 @@
         <img src="{{asset('images/slider/'.$slider->gambar)}}" class="d-block w-100" alt="...">
         <div class="carousel-caption d-flex justify-content-center vh-100 ">
           <div class="text-center col-xl-8">
-            <h1 style="font-size: 3vw" class="text-white">{{$slider->judul}}</h1>
-            <p style="font-size: 1.5vw" class="text-white">{{$slider->isi}}</p>    
+            <h1 style="font-size: 2.5vw" class="text-white">{{$slider->judul}}</h1>
+            <p style="font-size: 1.2vw" class="text-white">{{$slider->isi}}</p>  
           </div>
         </div>
       </div>
@@ -191,7 +191,7 @@
       
 
     <!-- section 2 -->
-        <section class="container section-2">
+        <section class="container section-2 my-5">
             <style>
                 .text-penyedia{
                     color: #163C7D;
@@ -208,11 +208,11 @@
             </div>
             <div class="poin2 d-flex section-2-item">
                 <img src="img/Icon(1).png" alt="">
-                <span class="text-center text-penyedia">Penyedia Data Yang Cepat</span>
+                <span class="text-center text-penyedia">Data Multiguna Untuk Kebijakan</span>
             </div>
             <div class="poin3 d-flex section-2-item">
                 <img src="img/Icon(2).png" alt="">
-                <span class="text-center text-penyedia">Penyedia Data Yang Cepat</span>
+                <span class="text-center text-penyedia">Data Yang Tepat Dan Akurat</span>
             </div>
             </div>
         </section>
