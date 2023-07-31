@@ -37,15 +37,15 @@ class GaleriController extends Controller
             $image = $request->file('gambar');
             $input['imagename'] = time().'-'.$image->getClientOriginalName();
          
-            //$destinationPath = public_path('images/galeri/thumbnail');
-            $destinationPath = public_path('../images/galeri/thumbnail');
+            $destinationPath = public_path('images/galeri/thumbnail');
+            // $destinationPath = public_path('../images/galeri/thumbnail');
             $img = Image::make($image->getRealPath());
             $img->resize(150,null, function ($constraint) {
                 $constraint->aspectRatio();
             })->save($destinationPath.'/'.$input['imagename']);
 
-            //$destinationPath = public_path('images/galeri');
-            $destinationPath = public_path('../wakatobi/images/galeri');
+            $destinationPath = public_path('images/galeri');
+            // $destinationPath = public_path('../wakatobi/images/galeri');
             $image->move($destinationPath, $input['imagename']);
             GaleriModel::insert([
                 'judul'=>$request->judul,
