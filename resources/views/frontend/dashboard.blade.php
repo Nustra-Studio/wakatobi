@@ -50,7 +50,7 @@
         <img src="{{asset('images/slider/'.$slider->gambar)}}" class="d-block w-100" alt="...">
         <div class="carousel-caption d-flex justify-content-center vh-100 ">
           <div class="text-center col-xl-8">
-            <h1 style="font-size: 3.1vw" class="text-white">{{$slider->judul}}</h1>
+            <h1 style="font-size: 3vw" class="text-white">{{$slider->judul}}</h1>
             <p style="font-size: 1.5vw" class="text-white">{{$slider->isi}}</p>    
           </div>
         </div>
