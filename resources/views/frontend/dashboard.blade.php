@@ -191,7 +191,7 @@
       
 
     <!-- section 2 -->
-        <section class="container section-2 my-xl-5">
+        <section class="container d-none d-md-block section-2 my-xl-5">
             <style>
                 .text-penyedia{
                     color: #163C7D;
