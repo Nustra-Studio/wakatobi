@@ -50,8 +50,8 @@
         <img src="{{asset('images/slider/'.$slider->gambar)}}" class="d-block w-100" alt="...">
         <div class="carousel-caption d-flex justify-content-center vh-100 ">
           <div class="text-center col-xl-8">
-            <h1 style="font-size: 2.5vw" class="text-white">{{$slider->judul}}</h1>
-            <p style="font-size: 1.2vw" class="text-white">{{$slider->isi}}</p>  
+            <h1 style="font-size: 3vw" class="text-white">{{$slider->judul}}</h1>
+            <p style="font-size: 1.5vw" class="text-white">{{$slider->isi}}</p>  
           </div>
         </div>
       </div>
@@ -60,8 +60,8 @@
         <img src="{{asset('images/slider/'.$slider->gambar)}}" class="d-block w-100" alt="...">
         <div class="carousel-caption d-flex justify-content-center vh-100 ">
           <div class="text-center col-xl-8">
-            <h1 style="font-size: 2.5vw" class="text-white">{{$slider->judul}}</h1>
-            <p style="font-size: 1.2vw" class="text-white">{{$slider->isi}}</p>    
+            <h1 style="font-size: 3vw" class="text-white">{{$slider->judul}}</h1>
+            <p style="font-size: 1.5vw" class="text-white">{{$slider->isi}}</p>    
           </div>
         </div>
       </div>
@@ -414,7 +414,7 @@
                         <div class="news-content-text">
                             <h6>{{$berita->judul}}</h6>
                             <div class="d-flex">
-                            <img src="img/date_range.png" alt="">
+                            <img class="d-sm-none" src="img/date_range.png" alt="">
                             <p class="card-text">{{$tanggal}} </p>
                             </div>
                         </div>
