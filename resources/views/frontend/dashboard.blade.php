@@ -191,7 +191,7 @@
       
 
     <!-- section 2 -->
-        <section class="container section-2 my-5">
+        <section class="container section-2 my-xl-5">
             <style>
                 .text-penyedia{
                     color: #163C7D;
@@ -409,7 +409,7 @@
                         }
                     </style>
                         @foreach ($data as $berita)
-                        <a href="{{ url('/detail-berita/'.$berita->slug)}}" class="news-content-item d-flex mb-4">
+                        <a href="{{ url('/detail-berita/'.$berita->slug)}}" class="news-content-item d-flex mb-md-4 mb-sm-2">
                         <img class="frame" src="{{asset('images/berita/'.$berita->gambar)}}" alt="" width="18%">
                         <div class="news-content-text">
                             <h6>{{$berita->judul}}</h6>
