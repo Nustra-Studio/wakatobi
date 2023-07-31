@@ -38,7 +38,7 @@ class GaleriController extends Controller
             $input['imagename'] = time().'-'.$image->getClientOriginalName();
          
             //$destinationPath = public_path('images/galeri/thumbnail');
-            $destinationPath = base_path('../wakatobi/images/galeri/thumbnail');
+            $destinationPath = base_path('../images/galeri/thumbnail');
             $img = Image::make($image->getRealPath());
             $img->resize(150,null, function ($constraint) {
                 $constraint->aspectRatio();
@@ -82,14 +82,14 @@ class GaleriController extends Controller
             $image = $request->file('gambar');
             $input['imagename'] = time().'-'.$image->getClientOriginalName();
             //$destinationPath = public_path('images/galeri/thumbnail');
-            $destinationPath = base_path('../wakatobi/images/galeri/thumbnail');
+            $destinationPath = base_path('../images/galeri/thumbnail');
             $img = Image::make($image->getRealPath());
             $img->resize(150,null, function ($constraint) {
                 $constraint->aspectRatio();
             })->save($destinationPath.'/'.$input['imagename']);
 
             //$destinationPath = public_path('images/galeri');
-            $destinationPath = base_path('../wakatobi/images/galeri');
+            $destinationPath = base_path('../images/galeri');
             $image->move($destinationPath, $input['imagename']);
 
             GaleriModel::where('id',$id)
