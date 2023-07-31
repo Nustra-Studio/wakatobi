@@ -192,18 +192,26 @@
 
     <!-- section 2 -->
         <section class="container section-2">
+            <style>
+                .text-penyedia{
+                    color: #133251;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-top: 10px;
+                }
+            </style>
             <div class="d-flex section-2-container">
             <div class="poin1 d-flex section-2-item">
                 <img src="img/Icon.png" alt="">
-                <span class="text-center">Penyedia Data Yang Cepat</span>
+                <span class="text-center text-penyedia">Penyedia Data Yang Cepat</span>
             </div>
             <div class="poin2 d-flex section-2-item">
                 <img src="img/Icon(1).png" alt="">
-                <span class="text-center">Penyedia Data Yang Cepat</span>
+                <span class="text-center text-penyedia">Penyedia Data Yang Cepat</span>
             </div>
             <div class="poin3 d-flex section-2-item">
                 <img src="img/Icon(2).png" alt="">
-                <span class="text-center">Penyedia Data Yang Cepat</span>
+                <span class="text-center text-penyedia">Penyedia Data Yang Cepat</span>
             </div>
             </div>
         </section>
