@@ -414,7 +414,7 @@
                             <h6>{{$berita->judul}}</h6>
                             <div class="d-flex">
                             <img class="d-none d-md-block" src="img/date_range.png" alt="">
-                            <p class="card-text" style="font-size: 1.5vw">{{$tanggal}} </p>
+                            <p class="card-text">{{$tanggal}} </p>
                             </div>
                         </div>
                         </a>
