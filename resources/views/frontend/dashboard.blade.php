@@ -312,7 +312,7 @@
                 @endforeach
             </div>
         </div> --}}
-        <section class="container" id="berita">
+        <section class="container mt-4" id="berita">
             <h3>Berita dan Siaran</h3>
             <p style="color: #AAAAAA; ">Berita dan informasi seputar Pemerintahan Kabupaten Wakatobi</p>
             <div class="row mt-3">
@@ -461,7 +461,7 @@
                     @endphp
                     @if($i == 0)
  
-                        <div class="card card-galeri pb-3 ">
+                        <div class="card card-galeri pb-3 mb-4">
                             <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
                             <div class="card-img-overlay card-container">
                             <h5 class="card-title">{{$galeri->judul}}</h5>
