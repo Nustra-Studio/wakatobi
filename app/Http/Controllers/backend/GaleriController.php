@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\backend;
-use Illuminate\Support\Facades\Storage;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\models\backend\GaleriModel;
@@ -30,36 +30,32 @@ class GaleriController extends Controller
     }
 
     //=================================================================
-
-
     public function store(Request $request)
     {
-        if ($request->hasFile('gambar')) {
+        if($request->hasFile('gambar')) {
+            
             $image = $request->file('gambar');
-            $extension = $image->getClientOriginalExtension();
-            $imageName = time() . '-' . uniqid() . '.' . $extension;
-    
-            // Menyimpan thumbnail
-            $thumbnailPath = public_path('wakatobi/images/galeri/thumbnail');
-            $thumbnail = Image::make($image->getRealPath());
-            $thumbnail->resize(150, null, function ($constraint) {
+            $input['imagename'] = time().'-'.$image->getClientOriginalName();
+         
+            //$destinationPath = public_path('images/galeri/thumbnail');
+            $destinationPath = base_path('../images/galeri/thumbnail');
+            $img = Image::make($image->getRealPath());
+            $img->resize(150,null, function ($constraint) {
                 $constraint->aspectRatio();
-            })->save($thumbnailPath . '/' . $imageName);
-    
-            // Menyimpan gambar utama
-            $imagePath = public_path('wakatobi/images/galeri');
-            $image->move($imagePath, $imageName);
-    
+            })->save($destinationPath.'/'.$input['imagename']);
+
+            //$destinationPath = public_path('images/galeri');
+            $destinationPath = base_path('../wakatobi/images/galeri');
+            $image->move($destinationPath, $input['imagename']);
             GaleriModel::insert([
-                'judul' => $request->judul,
-                'gambar' => $imageName,
-                'created_at' => date('Y-m-d H:i:s'),
+                'judul'=>$request->judul,
+                'gambar'=>$input['imagename'],
+                'created_at'=>date('Y-m-d H:i:s'),
             ]);
         }
-    
-        return redirect('galeri')->with('status', 'Sukses menyimpan data');
+        
+        return redirect('galeri')->with('status','Sukses menyimpan data');
     }
-    
 
     //=================================================================
     public function show($id)
