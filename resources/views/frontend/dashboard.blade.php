@@ -194,7 +194,7 @@
         <section class="container section-2">
             <style>
                 .text-penyedia{
-                    color: #133251;
+                    color: #163C7D;
                     margin-top: 10px;
                     font-style: normal;
                     font-weight: 500;
