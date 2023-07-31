@@ -195,8 +195,6 @@
             <style>
                 .text-penyedia{
                     color: #133251;
-                    font-size: 20px;
-                    font-weight: bold;
                     margin-top: 10px;
                     font-style: normal;
                     font-weight: 500;
