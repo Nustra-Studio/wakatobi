@@ -491,8 +491,8 @@
                 <p style="color: #AAAAAA;">Artikel seputar Pemerintahan Kabupaten Wakatobi</p>
                 </div>
                 <div class="page-button">
-                <a id="prevBtn" class="mx-3" type="button" ><img src="img/Frame75.png" alt=""></a>
-                <a id="nextBtn" class="mx-3" type="button"><img src="img/Frame74.png" alt=""></a>
+                <a id="prevBtn" class="mx-2" type="button" ><img src="img/Frame75.png" alt=""></a>
+                <a id="nextBtn" class="mx-2" type="button"><img src="img/Frame74.png" alt=""></a>
                 </div>
             </div>
                 <div class="carousel-container">
