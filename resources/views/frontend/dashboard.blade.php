@@ -372,7 +372,6 @@
                           <a href="{{ url('/detail-berita/'.$berita->slug)}}" class=" h5 card-title">{{$berita->judul}}</a>
                           <div class="d-flex">
                             <img src="img/Vector.png" alt="">
-                        
                             <p class="card-text">{{$tanggal}}</p>
                           </div>
                           
@@ -415,8 +414,7 @@
                             <h6>{{$berita->judul}}</h6>
                             <div class="d-flex">
                             <img class="d-none d-md-block" src="img/date_range.png" alt="">
-                            <p class="d-none d-md-block card-text">{{$tanggal}} </p>
-                            <p class="d-sm-none card-text" style="font-size:1.3vw">{{$tanggal}} </p>
+                            <p class="card-text" style="font-size: 1.5vw">{{$tanggal}} </p>
                             </div>
                         </div>
                         </a>
