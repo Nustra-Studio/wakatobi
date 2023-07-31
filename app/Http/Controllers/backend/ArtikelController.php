@@ -43,7 +43,7 @@ class ArtikelController extends Controller
             $image = $request->file('gambar');
             $input['imagename'] = time().'-'.$image->getClientOriginalName();
          
-            $destinationPath = public_path('images/artikel/thumbnails');
+            $destinationPath = public_path('images/artikel/thumbnail');
             // $destinationPath = base_path('../wakatobi/images/artikel/thumbnail');
             $img = Image::make($image->getRealPath());
             $img->resize(150,null, function ($constraint) {
