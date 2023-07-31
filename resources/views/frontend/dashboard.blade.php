@@ -486,7 +486,7 @@
                             <div class=" galeri-item d-none"><img src="{{asset('images/galeri/'.$galeri->gambar)}}" alt=""></div>
                             @elseif ($i >= 1)
                                 <div class="card card-galeri mb-4">
-                                    <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img img-galeri" width="530" height="263" alt="...">
+                                    <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img img-galeri" alt="...">
                                 </div>
                             @endif
                             @php $i++; @endphp
