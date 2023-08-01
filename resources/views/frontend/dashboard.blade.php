@@ -542,7 +542,7 @@
                 <div class="col-lg-6 ">
                 <img src="img/Frame28.png" alt="">
                 </div>
-                <div class="col-lg-6 about-content-item">
+                <div class="col-lg-6 ms-lg-4 about-content-item">
                 <div class="content">
                 <h3>Kabupaten Wakatobi</h3>
                 <p>Pengolahan data Kabupaten Wakatobi merupakan proses penting dalam mengelola informasi dan statistik terkait wilayah tersebut. Kabupaten Wakatobi menggunakan teknologi dan sistem informasi modern untuk mengumpulkan, menyimpan, menganalisis, dan mengelola data yang beragam.
