@@ -408,6 +408,15 @@
                         }
                     </style>
                         @foreach ($data as $berita)
+                        @php
+                        $date = $berita->created_at;
+                        $dateTime = new DateTime($date);
+                        $dayOfWeek = $dateTime->format('w');
+                        $dayIndo = $days[$dayOfWeek];
+                        $monthIndo = $months[intval($dateTime->format('m')) - 1];
+                        $tanggal = $dayIndo . ', ' . $dateTime->format('d') . ' ' . $monthIndo . ' ' . $dateTime->format('Y');
+  
+                      @endphp
                         <a href="{{ url('/detail-berita/'.$berita->slug)}}" class="news-content-item d-flex mb-md-4 ">
                         <img class="frame" src="{{asset('images/berita/'.$berita->gambar)}}" alt="" width="18%">
                         <div class="news-content-text">
