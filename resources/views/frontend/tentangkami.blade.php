@@ -82,9 +82,8 @@
                     <br>
                     <div class="row">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15811.040748701675!2d112.0699626!3d-7.8151904!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f4428370fac379f!2sSuryantara+Cargo!5e0!3m2!1sid!2sid!4v1547396770588"
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3972.5005836180417!2d123.55014727405319!3d-5.340277794638356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMjAnMjUuMCJTIDEyM8KwMzMnMDkuOCJF!5e0!3m2!1sen!2sid!4v1690929677795!5m2!1sen!2sid"
                             width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
-
                     </div>
                 </div>
             </div>
