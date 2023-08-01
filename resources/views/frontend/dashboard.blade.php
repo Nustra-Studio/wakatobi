@@ -407,7 +407,7 @@
                         color:#212529;
                         }
                     </style>
-                        {{-- @foreach ($data as $berita)
+                        @foreach ($data as $berita)
                         <a href="{{ url('/detail-berita/'.$berita->slug)}}" class="news-content-item d-flex mb-md-4 ">
                         <img class="frame" src="{{asset('images/berita/'.$berita->gambar)}}" alt="" width="18%">
                         <div class="news-content-text">
@@ -432,7 +432,7 @@
                             </div>
                         </div>
                         </a>
-                        @endforeach --}}
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -448,7 +448,7 @@
                     </div>
                     <div class="row mt-3">
                     <div class="col-lg-6">
-                    {{-- @php $i=0; @endphp --}}
+                    @php $i=0; @endphp
                     @foreach($data3 as $galeri)
                     @php
                         $date = $galeri->created_at;
@@ -459,34 +459,7 @@
                         $tanggal = $dayIndo . ', ' . $dateTime->format('d') . ' ' . $monthIndo . ' ' . $dateTime->format('Y');
 
                     @endphp
-
-
-                        <a href="">
-                            <div class="card card-galeri">
-                            <img src="img/image4.png" class="card-img" alt="...">
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="card card-galeri">
-                                <img src="img/image4.png" class="card-img" alt="...">
-                            </div>
-                            </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a href="">
-                            <div class="card card-galeri">
-                                <img src="img/image4.png" class="card-img" alt="...">
-                            </div>
-                            </a>
-                            <a href="">
-                            <div class="card card-galeri">
-                                <img src="img/image4.png" class="card-img" alt="...">
-                            </div>
-                            </a>
-                    </div>
-
-                    </div>
-                    {{-- @if($i == 0)
+                    @if($i == 0)
  
                         <div class="card card-galeri pb-3 mb-4">
                             <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
@@ -500,8 +473,8 @@
                             </div>
                         </div>
 
-                        @endif --}}
-                        {{-- @php $i++; @endphp
+                        @endif
+                        @php $i++; @endphp
                         @endforeach
                     </div>
                     <div class="col-lg-6 galeri-items">
@@ -518,7 +491,7 @@
                             @endif
                             @php $i++; @endphp
                         @endforeach
-                    </div> --}}
+                    </div>
                     </div>
                 </div>
                 </section>
