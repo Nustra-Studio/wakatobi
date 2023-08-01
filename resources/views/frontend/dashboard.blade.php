@@ -500,18 +500,18 @@
                     @foreach ($data3 as $galeri)
                     <div class="col-lg-6">
                         @if ($i == 0)
-                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img my-2" alt="...">
                         @endif
                         @if ($i == 1)
-                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img my-2" alt="...">
                         @endif
                     </div>
                     <div class="col-lg-6">
                         @if ($i == 2)
-                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img my-2" alt="...">
                         @endif
                         @if ($i == 3)
-                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img my-2" alt="...">
                         @endif
                     </div>
                                         
