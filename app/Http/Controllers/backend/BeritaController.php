@@ -41,8 +41,8 @@ class BeritaController extends Controller
             $image = $request->file('gambar');
             $input['imagename'] = time().'-'.$image->getClientOriginalName();
          
-            //$destinationPath = public_path('images/berita/thumbnail');
-            $destinationPath = base_path('../wakatobi/images/berita/thumbnail');
+            $destinationPath = public_path('images/berita/thumbnail');
+            // $destinationPath = base_path('../wakatobi/images/berita/thumbnail');
             $img = Image::make($image->getRealPath());
             $img->resize(150,null, function ($constraint) {
                 $constraint->aspectRatio();
@@ -83,8 +83,8 @@ class BeritaController extends Controller
             
             $image = $request->file('gambar');
             $input['imagename'] = time().'-'.$image->getClientOriginalName();
-            //$destinationPath = public_path('images/berita/thumbnail');
-            $destinationPath = base_path('../wakatobi/images/berita/thumbnail');
+            $destinationPath = public_path('images/berita/thumbnail');
+            // $destinationPath = base_path('../wakatobi/images/berita/thumbnail');
             $img = Image::make($image->getRealPath());
             $img->resize(150,null, function ($constraint) {
                 $constraint->aspectRatio();

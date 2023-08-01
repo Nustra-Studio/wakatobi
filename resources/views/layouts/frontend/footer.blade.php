@@ -49,7 +49,7 @@ $visitor = DB::table('visitor')->count();
                 <span>Telp 1 :{{$ws->telp_satu}}</span>
                 <span>Faks : {{$ws->telp_dua}}</span>
                 <span>Email : admin@wakatobikab.go.id</span>
-                <span>lokasi kantor kominfo: 5°20'25.0"S 123°33'09.8"E, (-5.340279, 123.552714)</span>
+                <span>lokasi kantor kominfo: <a href="https://goo.gl/maps/oT1hCRSGyeVEhjuL6">5°20'25.0"S 123°33'09.8"E, (-5.340279, 123.552714)</a> </span>
             </div>
 
             </div>  
