@@ -40,19 +40,20 @@ $visitor = DB::table('visitor')->count();
                 <h3>Kabupaten Wakatobi</h3>
             </div>
             <div class="footer-item">
-                <span>Jl. Merdeka No. 1, Sulawesi Tenggara, Indonesia</span>
+                <span>alamat : Jl. Laode Mbai Maswar No. 2, Kelurahan Mandati III, Kecamatan Wangi-wangi Selatan, Kabupaten Wakatobi</span>
                 <span>Telp 1 :{{$ws->telp_satu}}</span>
                 <span>Faks : {{$ws->telp_dua}}</span>
-                <span>Email : wakatobi@info.id</span>
+                <span>Email : admin@wakatobikab.go.id</span>
+                <span>lokasi kantor kominfo: 5°20'25.0"S 123°33'09.8"E, (-5.340279, 123.552714)</span>
             </div>
 
             </div>  
             <div class="col-lg-3 text-white partnership">
             <h3>Partnership</h3>
             <div class="footer-item">
-            <span><a href="">Pemda Wakatobi</a></span>
-            <span><a href="">BPS Kab. Wakatobii</a></span>
-            <span><a href="">SIPD</a></span>
+            <span><a href=" www.wakatobikab.go.id">Pemda Wakatobi</a></span>
+            <span><a href="https://wakatobikab.bps.go.id/">BPS Kab. Wakatobii</a></span>
+            <span><a href="https://www.wakatobikab.go.id/">SIPD</a></span>
             </div>
             </div>
             <div class="col-lg-3 text-white socialMedia">
