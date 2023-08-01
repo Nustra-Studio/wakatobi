@@ -48,8 +48,8 @@ class BeritaController extends Controller
                 $constraint->aspectRatio();
             })->save($destinationPath.'/'.$input['imagename']);
 
-            //$destinationPath = public_path('images/berita');
-            $destinationPath = base_path('../wakatobi/images/berita');
+            $destinationPath = public_path('images/berita');
+            // $destinationPath = base_path('../wakatobi/images/berita');
             $image->move($destinationPath, $input['imagename']);
        
         }
@@ -89,8 +89,8 @@ class BeritaController extends Controller
             $img->resize(150,null, function ($constraint) {
                 $constraint->aspectRatio();
             })->save($destinationPath.'/'.$input['imagename']);
-            //$destinationPath = public_path('images/berita');
-            $destinationPath = base_path('../wakatobi/images/berita');
+            $destinationPath = public_path('images/berita');
+            // $destinationPath = base_path('../wakatobi/images/berita');
             $image->move($destinationPath, $input['imagename']);
             
             BeritaModel::where('id',$id)

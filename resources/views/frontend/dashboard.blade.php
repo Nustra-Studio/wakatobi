@@ -448,7 +448,7 @@
                     </div>
                     <div class="row mt-3">
                     <div class="col-lg-6">
-                    @php $i=0; @endphp
+                    {{-- @php $i=0; @endphp --}}
                     @foreach($data3 as $galeri)
                     @php
                         $date = $galeri->created_at;
@@ -459,7 +459,34 @@
                         $tanggal = $dayIndo . ', ' . $dateTime->format('d') . ' ' . $monthIndo . ' ' . $dateTime->format('Y');
 
                     @endphp
-                    @if($i == 0)
+
+
+                        <a href="">
+                            <div class="card card-galeri">
+                            <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="card card-galeri">
+                                <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                            </div>
+                            </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="">
+                            <div class="card card-galeri">
+                                <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                            </div>
+                            </a>
+                            <a href="">
+                            <div class="card card-galeri">
+                                <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                            </div>
+                            </a>
+                    </div>
+
+                    </div>
+                    {{-- @if($i == 0)
  
                         <div class="card card-galeri pb-3 mb-4">
                             <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
@@ -473,8 +500,8 @@
                             </div>
                         </div>
 
-                        @endif
-                        @php $i++; @endphp
+                        @endif --}}
+                        {{-- @php $i++; @endphp
                         @endforeach
                     </div>
                     <div class="col-lg-6 galeri-items">
@@ -491,7 +518,7 @@
                             @endif
                             @php $i++; @endphp
                         @endforeach
-                    </div>
+                    </div> --}}
                     </div>
                 </div>
                 </section>
