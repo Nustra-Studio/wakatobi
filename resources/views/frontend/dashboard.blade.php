@@ -492,13 +492,14 @@
                             @php $i++; @endphp
                         @endforeach
                     </div>
-                </div> --}}
-                <div class="row mt-3">
-                    @php
-                        $i=0;
+                </div> --}} 
+                @php
+                    $i=0;
                     @endphp
+            @foreach ($data3 as $i => $galeri)
+                <div class="row">
+                   
                     <!-- Assuming $i is declared and initialized somewhere before this loop -->
-                    @foreach ($data3 as $i => $galeri)
                         <div class="col-lg-6">
                             @if ($i == 0 || $i == 2) <!-- Updated the condition to display images at index 0 and 2 -->
                                 <img src="{{ asset('images/galeri/'.$galeri->gambar) }}" class="card-img my-2" alt="...">
@@ -509,9 +510,9 @@
                                 <img src="{{ asset('images/galeri/'.$galeri->gambar) }}" class="card-img my-2" alt="...">
                             @endif
                         </div>
-                    @endforeach
-
                 </div>
+                @endforeach
+
             </div>
                 </section>
         </div>
