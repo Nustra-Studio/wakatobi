@@ -493,25 +493,29 @@
                         @endforeach
                     </div>
                 </div> --}} 
-                @php
-                    $i=0;
-                    @endphp
-            @foreach ($data3 as $i => $galeri)
+                    @php
+                    $i = 0; // Initialize the variable $i
+                @endphp
+                
                 <div class="row">
-                   
-                    <!-- Assuming $i is declared and initialized somewhere before this loop -->
+                    @foreach ($data3 as $galeri)
                         <div class="col-lg-6">
-                            @if ($i == 0 || $i == 2) <!-- Updated the condition to display images at index 0 and 2 -->
+                            @if ($i % 4 == 0)
                                 <img src="{{ asset('images/galeri/'.$galeri->gambar) }}" class="card-img my-2" alt="...">
                             @endif
                         </div>
                         <div class="col-lg-6">
-                            @if ($i == 1 || $i == 3) <!-- Updated the condition to display images at index 0 and 2 -->
+                            @if (($i - 1) % 4 == 0)
                                 <img src="{{ asset('images/galeri/'.$galeri->gambar) }}" class="card-img my-2" alt="...">
                             @endif
                         </div>
+                
+                        @php
+                            $i++; // Increment the variable $i for the next iteration
+                        @endphp
+                    @endforeach
                 </div>
-                @endforeach
+            
 
             </div>
                 </section>
