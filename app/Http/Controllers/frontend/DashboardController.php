@@ -52,7 +52,7 @@ class DashboardController extends Controller
     
         $data_galeri = GaleriModel::select(DB::raw('galeri.*'))
         ->orderby('galeri.id','desc')
-        ->limit(4)
+        ->limit(3)
         ->get();
         $count_slider = DB::table('slider')->count();
         $data_banner = SliderModel::select(DB::raw('slider.*'))->get();
