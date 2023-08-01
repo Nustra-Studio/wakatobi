@@ -39,8 +39,13 @@ $visitor = DB::table('visitor')->count();
                 <img src="/img/Frame5.png" alt=""> 
                 <h3>Kabupaten Wakatobi</h3>
             </div>
+            <style>
+                .footer-item a{
+                        color: white;
+                }
+            </style>
             <div class="footer-item">
-                <span>alamat : Jl. Laode Mbai Maswar No. 2, Kelurahan Mandati III, Kecamatan Wangi-wangi Selatan, Kabupaten Wakatobi</span>
+                <span>alamat : <a href="">Jl. Laode Mbai Maswar No. 2, Kelurahan Mandati III, Kecamatan Wangi-wangi Selatan, Kabupaten Wakatobi</a></span>
                 <span>Telp 1 :{{$ws->telp_satu}}</span>
                 <span>Faks : {{$ws->telp_dua}}</span>
                 <span>Email : admin@wakatobikab.go.id</span>
