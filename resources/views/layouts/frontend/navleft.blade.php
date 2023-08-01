@@ -42,7 +42,7 @@
 
               </div>
               <div class="card mb-1">
-                  <div class="card-header" style="background-color: #133251!important;" role="tab" id="headingFour4">
+                  <div class="card-header" style="background-color: #163C7D!important;" role="tab" id="headingFour4">
                       <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour4" aria-expanded="true"
                           aria-controls="collapseFour4">
                           <H6 class="mb-0 text-white">
@@ -88,7 +88,7 @@
 
               </div>
               <div class="card mb-1">
-                  <div class="card-header" style="background-color: #133251!important;" role="tab" id="headingFive5">
+                  <div class="card-header" style="background-color: #163C7D!important;" role="tab" id="headingFive5">
                       <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseFive5" aria-expanded="true"
                           aria-controls="collapseFive5">
                           <H6 class="mb-0 text-white">
@@ -127,7 +127,7 @@
 
               </div>
               <div class="card mb-1">
-                  <div class="card-header" style="background-color: #133251!important;" role="tab" id="headingTwo2">
+                  <div class="card-header" style="background-color: #163C7D!important;" role="tab" id="headingTwo2">
                       <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
                           aria-expanded="false" aria-controls="collapseTwo2">
                           <h6 class="mb-0 text-white">
@@ -179,7 +179,7 @@
 
               </div>
               <div class="card mb-1">
-                  <div class="card-header" style="background-color: #133251!important;" role="tab" id="headingThree3">
+                  <div class="card-header" style="background-color: #163C7D!important;" role="tab" id="headingThree3">
                       <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
                           aria-expanded="false" aria-controls="collapseThree3">
                           <h6 class="mb-0 text-white">
@@ -233,7 +233,7 @@
 
               </div>
               <div class="card">
-                  <div class="card-header" style="background-color: #133251!important;" role="tab">
+                  <div class="card-header" style="background-color: #163C7D!important;" role="tab">
                       <a href="{{url('program-unggulan/index')}}" data-parent="#accordionEx" aria-expanded="true">
                           <H6 class="mb-0 text-white">
                              <i class="fa fa-file"></i> Program unggulan
