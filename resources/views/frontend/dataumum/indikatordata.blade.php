@@ -43,11 +43,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="text-center">
+                            <div class="text-center mt-3 text-white">
                                 <!-- <button type="reset" class="btn btn-success">Reset</button> -->
-                                <button type="submit" class="btn btn-lg btn-info">Tampilkan</button>
+                                <button type="submit" class="btn btn-md btn-info mx-2">Tampilkan</button>
                                 <a onclick="window.history.go(-1);"><button type="button"
-                                        class="btn btn-lg btn-danger">Kembali</button></a>
+                                        class="btn btn-md btn-danger mx-2">Kembali</button></a>
                             </div>
                         </form>
 
