@@ -446,7 +446,7 @@
                         <p>Kumpulan Galeri dari Kegiatan Pemerintahan Kabupaten Wakatobi</p>
                         <a style="color: #E9EEEF"  class="text-end" href="{{url('semua-galeri')}}"> Lihat Semua</a>
                     </div>
-                {{-- <div class="row mt-3">
+                    <div class="row mt-3">
                     <div class="col-lg-6">
                     @php $i=0; @endphp
                     @foreach($data3 as $galeri)
@@ -492,32 +492,8 @@
                             @php $i++; @endphp
                         @endforeach
                     </div>
-                </div> --}} 
-                    @php
-                    $i = 0; // Initialize the variable $i
-                @endphp
-                
-                <div class="row">
-                    @foreach ($data3 as $galeri)
-                        <div class="col-lg-6">
-                            @if ($i % 4 == 0)
-                                <img src="{{ asset('images/galeri/'.$galeri->gambar) }}" class="card-img my-2" alt="...">
-                            @endif
-                        </div>
-                        <div class="col-lg-6">
-                            @if (($i - 1) % 4 == 0)
-                                <img src="{{ asset('images/galeri/'.$galeri->gambar) }}" class="card-img my-2" alt="...">
-                            @endif
-                        </div>
-                
-                        @php
-                            $i++; // Increment the variable $i for the next iteration
-                        @endphp
-                    @endforeach
+                    </div>
                 </div>
-            
-
-            </div>
                 </section>
         </div>
         <!-- Section 5 -->
