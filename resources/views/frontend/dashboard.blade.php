@@ -408,7 +408,7 @@
                         }
                     </style>
                         @foreach ($data as $berita)
-                        {{-- <a href="{{ url('/detail-berita/'.$berita->slug)}}" class="news-content-item d-flex mb-md-4 "> --}}
+                     
                         <img class="frame" src="{{asset('images/berita/'.$berita->gambar)}}" alt="" width="18%">
                         <div class="news-content-text">
                             <h6>{{$berita->judul}}</h6>
