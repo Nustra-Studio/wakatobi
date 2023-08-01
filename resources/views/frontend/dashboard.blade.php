@@ -408,7 +408,7 @@
                         }
                     </style>
                         @foreach ($data as $berita)
-                     
+                        <a href="{{ url('/detail-berita/'.$berita->slug)}}" class="news-content-item d-flex mb-md-4 ">
                         <img class="frame" src="{{asset('images/berita/'.$berita->gambar)}}" alt="" width="18%">
                         <div class="news-content-text">
                             <h6>{{$berita->judul}}</h6>
@@ -463,24 +463,24 @@
 
                         <a href="">
                             <div class="card card-galeri">
-                            <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                            <img src="img/image4.png" class="card-img" alt="...">
                             </div>
                         </a>
                         <a href="">
                             <div class="card card-galeri">
-                                <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                                <img src="img/image4.png" class="card-img" alt="...">
                             </div>
                             </a>
                     </div>
                     <div class="col-lg-6">
                         <a href="">
                             <div class="card card-galeri">
-                                <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                                <img src="img/image4.png" class="card-img" alt="...">
                             </div>
                             </a>
                             <a href="">
                             <div class="card card-galeri">
-                                <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                                <img src="img/image4.png" class="card-img" alt="...">
                             </div>
                             </a>
                     </div>
