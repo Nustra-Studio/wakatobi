@@ -157,13 +157,13 @@
                                 <div class="searchparent">
                                     <div class="textbox_div">
                                         <input placeholder="USERNAME" class="textbox" type="text"
-                                        name="username" value="{{ old('username') }} autocomplete="off">
+                                        name="username" value="{{ old('username') }}" autocomplete="off">
                                     
                                             <input placeholder="PASSWORD" class="textbox"
                                             type="password" name="password" autocomplete="off">
                                         </div>
                                 </div>
-                            </div><button type="submit" class="btn wakatobi">MASUK</button>
+                            </div><button type="submit" class="btn" style="background-color: #0048af; color:white; ">MASUK</button>
                         </form>
                     </div>
                 </div>
