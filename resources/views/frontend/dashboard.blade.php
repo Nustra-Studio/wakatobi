@@ -497,25 +497,20 @@
                     @php
                         $i=0;
                     @endphp
-                    @foreach ($data3 as $galeri)
-                    <div class="col-lg-6">
-                        @if ($i == 0)
-                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img my-2" alt="...">
-                        @endif
-                        @if ($i == 1)
-                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img my-2" alt="...">
-                        @endif
-                    </div>
-                    <div class="col-lg-6">
-                        @if ($i == 2)
-                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img my-2" alt="...">
-                        @endif
-                        @if ($i == 3)
-                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img my-2" alt="...">
-                        @endif
-                    </div>
-                                        
+                    <!-- Assuming $i is declared and initialized somewhere before this loop -->
+                    @foreach ($data3 as $i => $galeri)
+                        <div class="col-lg-6">
+                            @if ($i == 0 || $i == 2) <!-- Updated the condition to display images at index 0 and 2 -->
+                                <img src="{{ asset('images/galeri/'.$galeri->gambar) }}" class="card-img my-2" alt="...">
+                            @endif
+                        </div>
+                        <div class="col-lg-6">
+                            @if ($i == 1 || $i == 3) <!-- Updated the condition to display images at index 0 and 2 -->
+                                <img src="{{ asset('images/galeri/'.$galeri->gambar) }}" class="card-img my-2" alt="...">
+                            @endif
+                        </div>
                     @endforeach
+
                 </div>
             </div>
                 </section>
