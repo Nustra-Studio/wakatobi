@@ -446,7 +446,7 @@
                         <p>Kumpulan Galeri dari Kegiatan Pemerintahan Kabupaten Wakatobi</p>
                         <a style="color: #E9EEEF"  class="text-end" href="{{url('semua-galeri')}}"> Lihat Semua</a>
                     </div>
-                    <div class="row mt-3">
+                {{-- <div class="row mt-3">
                     <div class="col-lg-6">
                     @php $i=0; @endphp
                     @foreach($data3 as $galeri)
@@ -492,8 +492,21 @@
                             @php $i++; @endphp
                         @endforeach
                     </div>
+                </div> --}}
+                <div class="row mt-3">
+                    @foreach ($data3 as $galeri)
+                    <div class="col-lg-6">
+                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
                     </div>
+                    <div class="col-lg-6">
+                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                    </div>
+                                        
+                    @endforeach
                 </div>
+            </div>
                 </section>
         </div>
         <!-- Section 5 -->
