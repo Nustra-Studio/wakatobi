@@ -131,7 +131,7 @@
             <style>  
             .signin_container {
                 display: block;
-                width: 450px;
+                width: 520px;
                 min-height: 520px;
                 background-color: #fff;
                 box-shadow: 0px 2px 30px #999;
