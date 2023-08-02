@@ -128,7 +128,19 @@
             <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
             <link rel="stylesheet" href="{{asset('assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
             <link rel="stylesheet" href="{{asset('assets/dist/css/adminlte.min.css')}}">
-            <style></style>
+            <style>  
+            .signin_container {
+                display: block;
+                width: 450px;
+                min-height: 520px;
+                background-color: #fff;
+                box-shadow: 0px 2px 30px #999;
+                margin: auto;
+                position: relative;
+                z-index: 1;
+                margin-top: 11%;
+                overflow: hidden;
+            }</style>
         </head>
 
         <body id="page">
