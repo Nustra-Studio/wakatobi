@@ -167,9 +167,6 @@
                         </form>
                     </div>
                 </div>
-                <div class="rightside_box">
-                    
-                </div>
             </div>
             <script src="https://www.wakatobikab.go.id/asset/plugin/jquery-3.1.1/jquery-3.1.1.min.js"></script>
             <script src="https://www.wakatobikab.go.id/asset/plugin/jquery-3.1.1/jquery-ui.js"></script>
