@@ -58,7 +58,7 @@ $visitor = DB::table('visitor')->count();
             <div class="footer-item">
             <span><a href="https://www.wakatobikab.go.id/">Pemda Wakatobi</a></span>
             <span><a href="https://wakatobikab.bps.go.id/">BPS Kab. Wakatobii</a></span>
-            <span><a href="https://www.wakatobikab.go.id/">SIPD</a></span>
+            <span><a href="https://sipd.wakatobikab.go.id/">SIPD</a></span>
             </div>
             </div>
             <div class="col-lg-3 text-white socialMedia">
