@@ -168,9 +168,7 @@
                     </div>
                 </div>
                 <div class="rightside_box">
-                    <div class="product_img"></div>
-                    <div class="product_head">Keep your account secure</div>
-                    <div class="product_text">Having trouble logging in? Contact your system administrator</div>
+                    
                 </div>
             </div>
             <script src="https://www.wakatobikab.go.id/asset/plugin/jquery-3.1.1/jquery-3.1.1.min.js"></script>
