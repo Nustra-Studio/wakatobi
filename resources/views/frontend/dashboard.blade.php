@@ -461,23 +461,25 @@
                         @foreach($data3 as $galeri)
                             @if ($i % 2 == 0 )
                             <div class=" col-lg-4 col-md-4 galeri-items">
+                                @if ($i % 2 != 0 )
                                 <div class="card card-galeri galeri-item">
                                     <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
                                     <div class="card-img-overlay card-container-galeri">
                                     <h5 class="card-title">PENANDATANGANAN KOMITMEN DEWAN SMART CITY KABUPATEN WAKATOBI</h5>
-                                    <!-- <div class="d-flex">
-                                        <img src="img/Vector.png" alt="">
-                                        <p class="card-text">Rabu, 05 Juli 2023 </p>
-                                    </div> -->
-                                    </div>
                                 </div>
-                            </div>
-                            @endif
-
-                        @php $i++; @endphp
-                        @endforeach
-
+                                </div>
+                                @else
+                                <div class="card card-galeri galeri-item">
+                                    <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                                    <div class="card-img-overlay card-container-galeri">
+                                    <h5 class="card-title">PENANDATANGANAN KOMITMEN DEWAN SMART CITY KABUPATEN WAKATOBI</h5>
+                                </div>
+                                </div>
+                                @endif
                     </div>
+                    @php $i++; @endphp
+                    @endforeach
+
                 </div>
                 </section>
         </div>
