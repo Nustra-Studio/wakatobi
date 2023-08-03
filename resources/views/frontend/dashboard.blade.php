@@ -458,7 +458,7 @@
                         @foreach ($items as $galeri)
                         <div class="card card-galeri galeri-item pb-5 my-2">
                             <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
-                            <div class="card-img-overlay card-container-galeri">
+                            <div class="card-img-overlay card-container-galeri pb-2">
                             <h5 class="card-title">{{ $galeri->judul }}</h5>
                             <!-- Add other data properties if needed -->
                             </div>
