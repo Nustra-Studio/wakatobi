@@ -464,9 +464,10 @@
                             </div>
                         </div>
                         @endforeach
-
+                    </div>
+                    @endforeach
                     <a href="{{url('semua-galeri')}}" class="selengkapnya mt-5">Selengkapnya</a>
-                </div>
+
                 </div>
             </section>
         </div>
