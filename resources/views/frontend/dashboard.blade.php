@@ -477,6 +477,7 @@
                                 </div>
                                 @endif
                     </div>
+                    @endif
                     @php $i++; @endphp
                     @endforeach
 
