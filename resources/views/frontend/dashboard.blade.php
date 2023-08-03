@@ -453,34 +453,18 @@
                 <h3>Galeri</h3>     
                     <p>Kumpulan Galeri dari Kegiatan Pemerintahan Kabupaten Wakatobi</p>
                 <div class="row mt-3">
-                    @php
-                        $i = 0;
-                    @endphp
-                    @foreach($data3 as $galeri)
-                        @if ($i % 2 == 0)
-                        <div class=" col-lg-4 col-md-4 galeri-items">
-                                @if ($i == $i && $i % 2 == 0) 
-                                    <div class="card card-galeri galeri-item">
-                                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
-                                        <div class="card-img-overlay card-container-galeri">
-                                        <h5 class="card-title">{{$galeri->judul}}</h5>
-                                
-                                        </div>
-                                    </div>
-                                    
-                                @else
-                                    <div class="card card-galeri galeri-item">
-                                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
-                                        <div class="card-img-overlay card-container-galeri">
-                                        <h5 class="card-title">{{$galeri->judul}}</h5>
-                                
-                                        </div>
-                                    </div>
-                                @endif
-                        @endif
-                    @php $i++; @endphp
-                    </div>
-                    @endforeach
+                    @foreach ($data3 as $items)
+                    <div class="col-lg-4 col-md-4 galeri-items">
+                        @foreach ($items as $galeri)
+                        <div class="card card-galeri galeri-item">
+                            <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                            <div class="card-img-overlay card-container-galeri">
+                            <h5 class="card-title">{{ $galeri->judul }}</h5>
+                            <!-- Add other data properties if needed -->
+                            </div>
+                        </div>
+                        @endforeach
+
                     <a href="{{url('semua-galeri')}}" class="selengkapnya mt-5">Selengkapnya</a>
                 </div>
                 </div>

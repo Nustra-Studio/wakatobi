@@ -50,10 +50,11 @@ class DashboardController extends Controller
         ->limit(3)
         ->get();
     
-        $data_galeri = GaleriModel::select(DB::raw('galeri.*'))
+        $data_galeris = GaleriModel::select(DB::raw('galeri.*'))
         ->orderby('galeri.id','desc')
         ->limit(6)
         ->get();
+        $data_galeri = $data_galeris->take(6)->chunk(2)->take(3);
         $count_slider = DB::table('slider')->count();
         $data_banner = SliderModel::select(DB::raw('slider.*'))->get();
         return view('frontend.dashboard',['data' => $data_berita , 'data2' => $data_artikel, 'data3' => $data_galeri, 'banner' => $data_banner,
