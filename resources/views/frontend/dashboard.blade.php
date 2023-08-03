@@ -461,7 +461,7 @@
                         <div class=" col-lg-4 col-md-4 galeri-items">
                                 @if ($i == $i && $i % 2 == 0) 
                                     <div class="card card-galeri galeri-item">
-                                        <img src="{{asset('images/galeri/'.$galeri->gambar)}} class="card-img" alt="...">
+                                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
                                         <div class="card-img-overlay card-container-galeri">
                                         <h5 class="card-title">{{$galeri->judul}}</h5>
                                 
@@ -470,7 +470,7 @@
                                     
                                 @else
                                     <div class="card card-galeri galeri-item">
-                                        <img src="{{asset('images/galeri/'.$galeri->gambar)}} class="card-img" alt="...">
+                                        <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
                                         <div class="card-img-overlay card-container-galeri">
                                         <h5 class="card-title">{{$galeri->judul}}</h5>
                                 
