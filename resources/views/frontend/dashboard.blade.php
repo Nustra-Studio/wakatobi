@@ -450,37 +450,75 @@
         <div class="row" id="galeri">
             <section id="galeri">
                 <div class="container pb-5">
-                    <div class="row">
-                        <h3>Galeri</h3>
-                        <p>Kumpulan Galeri dari Kegiatan Pemerintahan Kabupaten Wakatobi</p>
-                        <a style="color: #E9EEEF"  class="text-end" href="{{url('semua-galeri')}}"> Lihat Semua</a>
+                <h3>Galeri</h3>     
+                    <p>Kumpulan Galeri dari Kegiatan Pemerintahan Kabupaten Wakatobi</p>
+                <div class="row mt-3">
+                    <div class=" col-lg-4 col-md-4 galeri-items">
+                        <div class="card card-galeri galeri-item">
+                        <img src="img/img1.png" class="card-img" alt="...">
+                        <div class="card-img-overlay card-container-galeri">
+                            <h5 class="card-title">PENANDATANGANAN KOMITMEN DEWAN SMART CITY KABUPATEN WAKATOBI</h5>
+                            <!-- <div class="d-flex">
+                            <img src="img/Vector.png" alt="">
+                            <p class="card-text">Rabu, 05 Juli 2023 </p>
+                            </div> -->
+                        </div>
+                        </div>
+                        <div class="card card-galeri galeri-item">
+                        <img src="img/img2.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay card-container-galeri">
+                            <h5 class="card-title">PENANDATANGANAN KOMITMEN DEWAN SMART CITY KABUPATEN WAKATOBI</h5>
+                            <!-- <div class="d-flex">
+                                <img src="img/Vector.png" alt="">
+                                <p class="card-text">Rabu, 05 Juli 2023 </p>
+                            </div> -->
+                        </div>
+                        </div>
                     </div>
-                    <div class="row mt-3">
-                        @php $i=0; @endphp
+                    <div class=" col-lg-4 col-md-4  galeri-items">
+                    <div class="card card-galeri galeri-item">
+                        <img src="img/img2.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay card-container-galeri">
+                        <h5 class="card-title">PENANDATANGANAN KOMITMEN DEWAN SMART CITY KABUPATEN WAKATOBI</h5>
+                        <!-- <div class="d-flex">
+                            <img src="img/Vector.png" alt="">
+                            <p class="card-text">Rabu, 05 Juli 2023 </p>
+                        </div> -->
+                        </div>
+                    </div>
+                    <div class="card card-galeri galeri-item">
+                        <img src="img/img3.png" class="card-img" alt="...">
+                        <div class="card-img-overlay card-container-galeri">
+                        <h5 class="card-title">PENANDATANGANAN KOMITMEN DEWAN SMART CITY KABUPATEN WAKATOBI</h5>
+                        <!-- <div class="d-flex">
+                            <img src="img/Vector.png" alt="">
+                            <p class="card-text">Rabu, 05 Juli 2023 </p>
+                        </div> -->
+                        </div>
+                    </div>
+                    <!-- <div class=" galeri-item"><img src="img/img2.jpg" alt=""></div>
+                    <div class="  galeri-item"><img src="img/img3.png" alt=""></div> -->
+                    </div>
+                    <div class=" col-lg-4 col-md-4  galeri-items">
+                    <div class="card card-galeri galeri-item">
+                        <img src="img/img2.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay card-container-galeri">
+                        <h5 class="card-title">PENANDATANGANAN KOMITMEN DEWAN SMART CITY KABUPATEN WAKATOBI</h5>
                         
-                        @foreach($data3 as $galeri)
-                            @if ($i % 2 == 0 )
-                            <div class=" col-lg-4 col-md-4 galeri-items">
-                                <div class="card card-galeri galeri-item">
-                                    <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
-                                    <div class="card-img-overlay card-container-galeri">
-                                    <h5 class="card-title">PENANDATANGANAN KOMITMEN DEWAN SMART CITY KABUPATEN WAKATOBI</h5>
-                                    </div>
-                                </div>
-                                <div class="card card-galeri galeri-item">
-                                    <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
-                                    <div class="card-img-overlay card-container-galeri">
-                                    <h5 class="card-title">PENANDATANGANAN KOMITMEN DEWAN SMART CITY KABUPATEN WAKATOBI</h5>
-                                    </div>
-                                </div>
-                                
+                        </div>
                     </div>
-                    @endif
-                    @php $i++; @endphp
-                    @endforeach
-
+                    <div class="card card-galeri galeri-item">
+                        <img src="img/img3.png" class="card-img" alt="...">
+                        <div class="card-img-overlay card-container-galeri">
+                        <h5 class="card-title">PENANDATANGANAN KOMITMEN DEWAN SMART CITY KABUPATEN WAKATOBI</h5>
+                
+                        </div>
+                    </div>
+                    </div>
+                    <a href="#" class="selengkapnya mt-5">Selengkapnya</a>
                 </div>
-                </section>
+                </div>
+            </section>
         </div>
         <!-- Section 5 -->
             <section id="artikel">
