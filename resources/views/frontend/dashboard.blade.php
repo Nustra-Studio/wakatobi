@@ -449,58 +449,34 @@
     <!-- Section 4 -->
         <div class="row" id="galeri">
             <section id="galeri">
-                <div class="container">
+                <div class="container pb-5">
                     <div class="row">
                         <h3>Galeri</h3>
                         <p>Kumpulan Galeri dari Kegiatan Pemerintahan Kabupaten Wakatobi</p>
                         <a style="color: #E9EEEF"  class="text-end" href="{{url('semua-galeri')}}"> Lihat Semua</a>
                     </div>
                     <div class="row mt-3">
-                    <div class="col-lg-6">
-                    @php $i=0; @endphp
-                    @foreach($data3 as $galeri)
-                    @php
-                        $date = $galeri->created_at;
-                        $dateTime = new DateTime($date);
-                        $dayOfWeek = $dateTime->format('w');
-                        $dayIndo = $days[$dayOfWeek];
-                        $monthIndo = $months[intval($dateTime->format('m')) - 1];
-                        $tanggal = $dayIndo . ', ' . $dateTime->format('d') . ' ' . $monthIndo . ' ' . $dateTime->format('Y');
-
-                    @endphp
-                    @if($i == 0)
- 
-                        <div class="card card-galeri pb-3 mb-4">
-                            <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
-                            <div class="card-img-overlay card-container">
-                            <h5 class="card-title">{{$galeri->judul}}</h5>
-                            <div class="d-flex">
-                                <img src="img/Vector.png" alt="">
-                                <p class="card-text">{{$tanggal}}</p>
+                        @php $i=0; @endphp
+                        
+                        @foreach($data3 as $galeri)
+                            @if ($i % 2 == 0 )
+                            <div class=" col-lg-4 col-md-4 galeri-items">
+                                <div class="card card-galeri galeri-item">
+                                    <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img" alt="...">
+                                    <div class="card-img-overlay card-container-galeri">
+                                    <h5 class="card-title">PENANDATANGANAN KOMITMEN DEWAN SMART CITY KABUPATEN WAKATOBI</h5>
+                                    <!-- <div class="d-flex">
+                                        <img src="img/Vector.png" alt="">
+                                        <p class="card-text">Rabu, 05 Juli 2023 </p>
+                                    </div> -->
+                                    </div>
+                                </div>
                             </div>
+                            @endif
 
-                            </div>
-                        </div>
-
-                        @endif
                         @php $i++; @endphp
                         @endforeach
-                    </div>
-                    <div class="col-lg-6 galeri-items">
-                        @php
-                            $i=0;
-                        @endphp
-                        @foreach($data3 as $galeri)
-                            @if($i == 0)
-                            <div class=" galeri-item d-none"><img src="{{asset('images/galeri/'.$galeri->gambar)}}" alt=""></div>
-                            @elseif ($i >= 1)
-                                <div class="card card-galeri mb-4">
-                                    <img src="{{asset('images/galeri/'.$galeri->gambar)}}" class="card-img img-galeri" alt="...">
-                                </div>
-                            @endif
-                            @php $i++; @endphp
-                        @endforeach
-                    </div>
+
                     </div>
                 </div>
                 </section>
