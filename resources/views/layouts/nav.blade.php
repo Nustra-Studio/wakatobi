@@ -140,6 +140,112 @@
             </ul>
         </li>
         @endif
+        @if(Auth::user()->level=='Super Admin'
+        ||Auth::user()->level=='Admin Kec. Togo Binongko'
+        ||Auth::user()->level=='Admin Kec. Binongko'
+        ||Auth::user()->level=='Admin Kec. Tomia Timur'
+        ||Auth::user()->level=='Admin Kec. Tomia'
+        ||Auth::user()->level=='Admin Kec. Kaledupa'
+        ||Auth::user()->level=='Admin Kec. Kaledupa Selatan'
+        ||Auth::user()->level=='Admin Kec. Wangi-Wangi'
+        ||Auth::user()->level=='Admin Kec. Wangi-Wangi Selatan')
+        <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>
+                    Data Kecamatan
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            @if(Auth::user()->level=='Super Admin'
+        ||Auth::user()->level=='Admin Kec. Wangi-Wangi')
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{url('data-wangi')}}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Wangi-Wangi</p>
+                    </a>
+                </li>
+            </ul>
+            @endif
+            @if(Auth::user()->level=='Super Admin'
+        ||Auth::user()->level=='Admin Kec. Wangi-Wangi Selatan')
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{url('data-wangiselatan')}}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Wangi-Wangi Selatan</p>
+                    </a>
+                </li>
+            </ul>
+            @endif
+            @if(Auth::user()->level=='Super Admin'
+        ||Auth::user()->level=='Admin Kec. Kaledupa')
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{url('data-kaledupa')}}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Kaledupa</p>
+                    </a>
+                </li>
+            </ul>
+            @endif
+            @if(Auth::user()->level=='Super Admin'
+        ||Auth::user()->level=='Admin Kec. Kaledupa Selatan')
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{url('data-kaledupa-selatan')}}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Kaledupa Selatan</p>
+                    </a>
+                </li>
+            </ul>
+            @endif
+            @if(Auth::user()->level=='Super Admin'
+            ||Auth::user()->level=='Admin Kec. Tomia')
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{url('data-tomia')}}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Tomia</p>
+                    </a>
+                </li>
+            </ul>
+            @endif
+            @if(Auth::user()->level=='Super Admin'
+            ||Auth::user()->level=='Admin Kec. Tomia Timur')
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{url('data-tomiatimur')}}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Tomia Timur</p>
+                    </a>
+                </li>
+            </ul>
+            @endif
+            @if(Auth::user()->level=='Super Admin'
+            ||Auth::user()->level=='Admin Kec. Binongko')
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{url('data-binongko')}}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Binongko</p>
+                    </a>
+                </li>
+            </ul>
+            @endif
+            @if(Auth::user()->level=='Super Admin'||Auth::user()->level=='Admin Kec. Togo Binongko')
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{url('data-togobinongko')}}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Togo Binongko</p>
+                    </a>
+                </li>
+            </ul>
+            @endif
+        </li>
+        @endif
         @if(Auth::user()->level=='Super Admin' ||
         Auth::user()->level=='DISPENDIKBUD'||
         Auth::user()->level=='DINKES'||
@@ -605,6 +711,22 @@
             </a>
         </li>
         @endif
+        <li class="nav-item">
+            <a href="{{url('/rangking')}}" class="nav-link">
+                <i class="nav-icon fas fa-list"></i>
+                <p>
+                    Rangking
+                </p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{url('/download-center')}}" class="nav-link">
+                <i class="nav-icon fas fa-download"></i>
+                <p>
+                Download Center
+                </p>
+            </a>
+        </li>
         @if(Auth::user()->level=='Super Admin')
         <li class="nav-item">
             <a href="{{url('/setting-web')}}" class="nav-link">

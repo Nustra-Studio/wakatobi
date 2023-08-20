@@ -9,8 +9,25 @@ Route::get('/detail-artikel/{slug}','frontend\DashboardController@detailartikel'
 Route::get('/semua-berita','frontend\DashboardController@listberita');
 Route::get('/semua-artikel','frontend\DashboardController@listartikel');
 Route::get('/semua-galeri','frontend\DashboardController@listgaleri');
+Route::get('/perangkingan','frontend\DashboardController@perangkingan');
 //============================ROUTE INDEX PENCARIAN===============================================
+
+// Route::prefix('profile-data')->group(function(){
+//     Route::get('index','frontend\ProfilDataControl@index')->name('index.data');
+//     Route::get('data-list/{lnk}/{ld}/{kat}','frontend\ProfilDataControl@listData')->name('data.umum');
+//     Route::get('cari-data','frontend\ProfilDataControl@listPertahun')->name('lpertahun');
+//     Route::get('/graph-data/{data}/{kode}/{t1}/{t2}','frontend\ProfilDataControl@listGraph');
+// });
+
 Route::get('/profile-data','frontend\DataumumController@index');
+Route::get('/profile-kecamatan','frontend\KecamatanController@index');
+Route::get('/profile-kecamatan/wangi-wangi-selatan','frontend\KecamatanController@wangiselatan');
+Route::get('/profile-kecamatan/kaledupa','frontend\KecamatanController@kaledupa');
+Route::get('/profile-kecamatan/kaledupa-selatan','frontend\KecamatanController@kaledupaselatan');
+Route::get('/profile-kecamatan/tomia','frontend\KecamatanController@tomia');
+Route::get('/profile-kecamatan/tomia-timur','frontend\KecamatanController@tomiatimur');
+Route::get('/profile-kecamatan/binongko','frontend\KecamatanController@binongko');
+Route::get('/profile-kecamatan/togo-binongko','frontend\KecamatanController@togobinongko');
 Route::get('/data-umum/geografis','frontend\DataumumController@index');
 Route::get('/data-umum/indikator-data','frontend\DataumumController@indikator');
 Route::get('/data-umum/pajak-retribusi-daerah','frontend\DataumumController@pajakretribusi');
@@ -32,6 +49,21 @@ Route::get('/data-non-wajib/tenaga-kerja','frontend\DatanonwajibController@index
 Route::get('/data-non-wajib/pangan','frontend\DatanonwajibController@pangan');
 Route::get('/data-non-wajib/pertanahan','frontend\DatanonwajibController@pertanahan');
 Route::get('/data-non-wajib/pemberdayaan','frontend\DatanonwajibController@pemberdayaan');
+Route::get('/data-non-wajib/lingkungan-hidup','frontend\DatanonwajibController@lingkunganhidup');
+Route::get('/data-non-wajib/administrasi-kependudukan','frontend\DatanonwajibController@administrasikependudukan');
+Route::get('/data-non-wajib/pemberdayaan-masyarakat','frontend\DatanonwajibController@pemberdayaanmasyarakat');
+Route::get('/data-non-wajib/data-perhubungan','frontend\DatanonwajibController@dataperhubungan');
+Route::get('/data-non-wajib/pengendalian-penduduk','frontend\DatanonwajibController@pengendalianpenduduk');
+Route::get('/data-non-wajib/kominfo','frontend\DatanonwajibController@kominfo');
+Route::get('/data-non-wajib/koperasi','frontend\DatanonwajibController@koperasi');
+Route::get('/data-non-wajib/penanaman-modal','frontend\DatanonwajibController@penanamanmodal');
+Route::get('/data-non-wajib/olahraga','frontend\DatanonwajibController@olahraga');
+Route::get('/data-non-wajib/statistik','frontend\DatanonwajibController@statistik');
+Route::get('/data-non-wajib/persandian','frontend\DatanonwajibController@persandian');
+Route::get('/data-non-wajib/budaya','frontend\DatanonwajibController@budaya');
+Route::get('/data-non-wajib/perpustakaan','frontend\DatanonwajibController@perpustakaan');
+Route::get('/data-non-wajib/kearsipan','frontend\DatanonwajibController@kearsipan');
+
 Route::get('/data-wajib/kesehatan','frontend\DatawajibController@index');
 Route::get('/data-wajib/pendidikan','frontend\DatawajibController@pendidikan');
 Route::get('/data-wajib/sosial','frontend\DatawajibController@sosial');
@@ -60,6 +92,22 @@ Route::get('/sekertariat-dewan/cari','frontend\DataurusanpenunjangController@car
 Route::get('/sekertariat-daerah/cari','frontend\DataurusanpenunjangController@carisekertariatdaerah');
 Route::get('/tenaga-kerja/cari','frontend\DatanonwajibController@cari');
 Route::get('/pangan/cari','frontend\DatanonwajibController@caripangan');
+Route::get('/data-non-wajib/lingkungan-hidup/cari','frontend\DatanonwajibController@carilingkunganhidup');
+Route::get('/data-non-wajib/administrasi-kependudukan/cari','frontend\DatanonwajibController@cariadministrasikependudukan');
+Route::get('/data-non-wajib/pemberdayaan-masyarakat/cari','frontend\DatanonwajibController@caripemberdayaanmasyarakat');
+Route::get('/data-non-wajib/data-perhubungan/cari','frontend\DatanonwajibController@caridataperhubungan');
+Route::get('/data-non-wajib/pengendalian-penduduk/cari','frontend\DatanonwajibController@caripengendalianpenduduk');
+Route::get('/data-non-wajib/kominfo/cari','frontend\DatanonwajibController@carikominfo');
+Route::get('/data-non-wajib/koperasi/cari','frontend\DatanonwajibController@carikoperasi');
+Route::get('/data-non-wajib/penanaman-modal/cari','frontend\DatanonwajibController@caripenanamanmodal');
+Route::get('/data-non-wajib/olahraga/cari','frontend\DatanonwajibController@cariolahraga');
+Route::get('/data-non-wajib/statistik/cari','frontend\DatanonwajibController@caristatistik');
+Route::get('/data-non-wajib/persandian/cari','frontend\DatanonwajibController@caripersandian');
+Route::get('/data-non-wajib/budaya/cari','frontend\DatanonwajibController@caribudaya');
+Route::get('/data-non-wajib/perpustakaan/cari','frontend\DatanonwajibController@cariperpustakaan');
+Route::get('/data-non-wajib/kearsipan/cari','frontend\DatanonwajibController@carikearsipan');
+
+
 Route::get('/pertanahan/cari','frontend\DatanonwajibController@caripertanahan');
 Route::get('/pemberdayaan/cari','frontend\DatanonwajibController@caripemberdayaan');
 Route::get('/kesehatan/cari','frontend\DatawajibController@cari');
@@ -69,13 +117,29 @@ Route::get('/ketentraman-ketertiban/cari','frontend\DatawajibController@carikete
 Route::get('/pekerjaan-umum/cari','frontend\DatawajibController@caripekerjaan');
 Route::get('/perumahan-pemukiman/cari','frontend\DatawajibController@cariperumahan');
 Route::get('/program-unggulan/cari','frontend\DatawajibController@cariunggulan');
-
+Route::get('/profile-kecamatan/wangi-wangi/cari','frontend\KecamatanController@hasilwangi');
+Route::get('/profile-kecamatan/wangi-wangi-selatan/cari','frontend\KecamatanController@hasilwangiselatan');
+Route::get('/profile-kecamatan/kaledupa/cari','frontend\KecamatanController@hasilkaledupa');
+Route::get('/profile-kecamatan/kaledupa-selatan/cari','frontend\KecamatanController@hasilkaledupaselatan');
+Route::get('/profile-kecamatan/tomia/cari','frontend\KecamatanController@hasiltomia');
+Route::get('/profile-kecamatan/tomia-timur/cari','frontend\KecamatanController@hasiltomiatimur');
+Route::get('/profile-kecamatan/binongko/cari','frontend\KecamatanController@hasilbinongko');
+Route::get('/profile-kecamatan/togo-binongko/cari','frontend\KecamatanController@hasiltogobinongko');
 Auth::routes();
 Route::get('/home', 'backend\HomeController@index')->name('home');
 Route::get('/edit-profile', 'backend\HomeController@editprofile')->name('editprofile');
 Route::post('/edit-profile/{id}', 'backend\HomeController@aksieditprofile');
 
 //============================ROUTE Grafik===============================================
+Route::get('wangi-wangi/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\KecamatanController@carigrafikwangi');
+Route::get('wangi-wangi-selatan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\KecamatanController@carigrafikwangiselatan');
+Route::get('kaledupa/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\KecamatanController@carigrafikkaledupa');
+Route::get('kaledupa-selatan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\KecamatanController@carigrafikkaledupaselatan');
+Route::get('tomia/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\KecamatanController@carigrafiktomia');
+Route::get('tomia-timur/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\KecamatanController@carigrafiktomiatimur');
+Route::get('binongko/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\KecamatanController@carigrafikbinongko');
+Route::get('togo-binongko/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\KecamatanController@carigrafiktogobinongko');
+
 Route::get('pendidikan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatawajibController@carigrafikpendidikan');
 Route::get('geografis/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataumumController@carigrafikgeografis');
 Route::get('indikator/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataumumController@carigrafikindikator');
@@ -83,6 +147,43 @@ Route::get('pajak-retribusi/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','fronte
 Route::get('kesehatan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatawajibController@carigrafikkesehatan');
 Route::get('sosial/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatawajibController@carigrafiksosial');
 Route::get('ketentraman-ketertiban/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatawajibController@carigrafikkeamanan');
+Route::get('pekerjaan-umum/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatawajibController@carigrafikpekerjaanumum');
+Route::get('perumahan-pemukiman/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatawajibController@carigrafikperumahan');
+Route::get('program-unggulan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatawajibController@carigrafikprogramunggulan');
+Route::get('tenaga-kerja/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafiktenagakerja');
+Route::get('perencanaan-pembangunan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataurusanpenunjangController@carigrafikperencanaanpembangunan');
+Route::get('keuangan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataurusanpenunjangController@carigrafikkeuangan');
+Route::get('kepegawaian/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataurusanpenunjangController@carigrafikpegawai');
+Route::get('penelitan-pengembangan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataurusanpenunjangController@carigrafikpenelitian');
+Route::get('pengawasan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataurusanpenunjangController@carigrafikpengawasan');
+Route::get('sekertariat-dewan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataurusanpenunjangController@carigrafikdewan');
+Route::get('sekertariat-daerah/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataurusanpenunjangController@carigrafikdaerah');
+Route::get('pariwisata/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataurusanpilihanController@carigrafikpariwisata');
+Route::get('pertanian/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataurusanpilihanController@carigrafikpertanian');
+Route::get('kehutanan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataurusanpilihanController@carigrafikkehutanan');
+Route::get('perikanan-kelautan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataurusanpilihanController@carigrafikperikanan');
+
+Route::get('perdagangan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataurusanpilihanController@carigrafikperdagangan');
+Route::get('perindustrian/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataurusanpilihanController@carigrafikperindustrian');
+Route::get('sumber-daya/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataurusanpilihanController@carigrafiksumberdaya');
+Route::get('pangan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DataurusanpilihanController@carigrafikpangan');
+Route::get('pertanahan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafikpertanahan');
+Route::get('pemberdayaan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafikpemberdayaan');
+Route::get('lingkungan-hidup/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafiklingkunganhidup');
+Route::get('sipil/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafiksipil');
+Route::get('pemberdayaan-masyarakat/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafikpemberdayaanmasyarakat');
+Route::get('data-perhubungan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafikperhubungan');
+Route::get('pengendalian-penduduk/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafikpengendalianpenduduk');
+Route::get('kominfo/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafikkominfo');
+Route::get('koperasi/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafikkoperasi');
+Route::get('modal/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafikmodal');
+Route::get('olahraga/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafikolahraga');
+Route::get('statistik/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafikstatistik');
+Route::get('persandian/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafikpersandian');
+Route::get('budaya/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafikbudaya');
+Route::get('perpustakaan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafikperpustakaan');
+Route::get('kearsipan/cari-grafik/{kode}/{tahunawal}/{tahunakhir}','frontend\DatanonwajibController@carigrafikkearsipan');
+
 
 // Route::get('/data-admin','backend\AdminController@listdata'); with datatable plugin
 Route::resource('/admin','backend\AdminController');
@@ -97,6 +198,12 @@ Route::resource('/artikel','backend\ArtikelController');
 Route::resource('/komentar','backend\KomenartikelController');
 Route::resource('/slider','backend\SliderController');
 Route::resource('/setting-web','backend\SettingwebController');
+
+
+Route::get('/download-center','backend\DownloadCenterController@index');
+Route::post('/download-center','backend\DownloadCenterController@store');
+Route::get('/download-center/get-tahun/{namafile}','backend\DownloadCenterController@gettahun');
+
 
 //----------------------------------------------------------------------------------------
 Route::get('edit-konten/{kode}','backend\KontenhalamanController@editkonten');
@@ -403,3 +510,63 @@ Route::post('/data-koperasi-import','backend\KoperasiController@aksiimport');
 Route::get('/data-koperasi-export','backend\KoperasiController@export');
 Route::get('/data-koperasi','backend\KoperasiController@index');
 Route::post('/data-koperasi/hapus','backend\KoperasiController@destroy');
+
+//----------------------------------------------------------------------------------------
+Route::get('/data-kaledupa-import','backend\KaledupaController@import');
+Route::post('/data-kaledupa-import','backend\KaledupaController@aksiimport');
+Route::get('/data-kaledupa-export','backend\KaledupaController@export');
+Route::get('/data-kaledupa','backend\KaledupaController@index');
+Route::post('/data-kaledupa/hapus','backend\KaledupaController@destroy');
+
+//----------------------------------------------------------------------------------------
+Route::get('/data-kaledupa-selatan-import','backend\KaledupaSelatanController@import');
+Route::post('/data-kaledupa-selatan-import','backend\KaledupaSelatanController@aksiimport');
+Route::get('/data-kaledupa-selatan-export','backend\KaledupaSelatanController@export');
+Route::get('/data-kaledupa-selatan','backend\KaledupaSelatanController@index');
+Route::post('/data-kaledupa-selatan/hapus','backend\KaledupaSelatanController@destroy');
+
+//----------------------------------------------------------------------------------------
+Route::get('/data-togobinongko-import','backend\TogobinongkoController@import');
+Route::post('/data-togobinongko-import','backend\TogobinongkoController@aksiimport');
+Route::get('/data-togobinongko-export','backend\TogobinongkoController@export');
+Route::get('/data-togobinongko','backend\TogobinongkoController@index');
+Route::post('/data-togobinongko/hapus','backend\TogobinongkoController@destroy');
+
+//----------------------------------------------------------------------------------------
+Route::get('/data-binongko-import','backend\BinongkoController@import');
+Route::post('/data-binongko-import','backend\BinongkoController@aksiimport');
+Route::get('/data-binongko-export','backend\BinongkoController@export');
+Route::get('/data-binongko','backend\BinongkoController@index');
+Route::post('/data-binongko/hapus','backend\BinongkoController@destroy');
+
+//----------------------------------------------------------------------------------------
+Route::get('/data-tomia-import','backend\TomiaController@import');
+Route::post('/data-tomia-import','backend\TomiaController@aksiimport');
+Route::get('/data-tomia-export','backend\TomiaController@export');
+Route::get('/data-tomia','backend\TomiaController@index');
+Route::post('/data-tomia/hapus','backend\TomiaController@destroy');
+
+//----------------------------------------------------------------------------------------
+Route::get('/data-tomiatimur-import','backend\TomiatimurController@import');
+Route::post('/data-tomiatimur-import','backend\TomiatimurController@aksiimport');
+Route::get('/data-tomiatimur-export','backend\TomiatimurController@export');
+Route::get('/data-tomiatimur','backend\TomiatimurController@index');
+Route::post('/data-tomiatimur/hapus','backend\TomiatimurController@destroy');
+
+//----------------------------------------------------------------------------------------
+Route::get('/data-wangi-import','backend\WangiController@import');
+Route::post('/data-wangi-import','backend\WangiController@aksiimport');
+Route::get('/data-wangi-export','backend\WangiController@export');
+Route::get('/data-wangi','backend\WangiController@index');
+Route::post('/data-wangi/hapus','backend\WangiController@destroy');
+
+//----------------------------------------------------------------------------------------
+Route::get('/data-wangiselatan-import','backend\WangiselatanController@import');
+Route::post('/data-wangiselatan-import','backend\WangiselatanController@aksiimport');
+Route::get('/data-wangiselatan-export','backend\WangiselatanController@export');
+Route::get('/data-wangiselatan','backend\WangiselatanController@index');
+Route::post('/data-wangiselatan/hapus','backend\WangiselatanController@destroy');
+
+//----------------------------------------------------------------------------------------
+Route::get('/rangking','backend\RangkingController@index');
+Route::get('/rangking/tampil','backend\RangkingController@show');
