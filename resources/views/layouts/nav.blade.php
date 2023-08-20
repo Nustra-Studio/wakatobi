@@ -94,49 +94,12 @@
                         <p>Artikel</p>
                     </a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="{{url('komentar')}}" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Komentar</p>
                     </a>
-                </li>
-            </ul>
-        </li>
-        @endif
-        @if(Auth::user()->level=='Super Admin'|| Auth::user()->level=='DISKOMINFO SP'|| Auth::user()->level=='BPPRD')
-        <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-file"></i>
-                <p>
-                    Data Umum
-                    <i class="right fas fa-angle-left"></i>
-                </p>
-            </a>
-            <ul class="nav nav-treeview">
-                @if(Auth::user()->level=='Super Admin'|| Auth::user()->level=='DISKOMINFO SP')
-                <li class="nav-item">
-                    <a href="{{url('data-geografis')}}" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Geografis</p>
-                    </a>
-                </li>
-                @endif
-                @if(Auth::user()->level=='Super Admin'|| Auth::user()->level=='DISKOMINFO SP')
-                <li class="nav-item">
-                    <a href="{{url('indikator-data-strategis')}}" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Indikator Data Strategis</p>
-                    </a>
-                </li>
-                @endif
-                @if(Auth::user()->level=='Super Admin'|| Auth::user()->level=='BPPRD')
-                <li class="nav-item">
-                    <a href="{{url('pajak-retribusi-daerah')}}" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Pajak & Retribusi Daerah</p>
-                    </a>
-                </li>
-                @endif
+                </li> -->
             </ul>
         </li>
         @endif
@@ -244,6 +207,43 @@
                 </li>
             </ul>
             @endif
+        </li>
+        @endif
+        @if(Auth::user()->level=='Super Admin'|| Auth::user()->level=='DISKOMINFO SP'|| Auth::user()->level=='BPPRD')
+        <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>
+                    Data Umum
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                @if(Auth::user()->level=='Super Admin'|| Auth::user()->level=='DISKOMINFO SP')
+                <li class="nav-item">
+                    <a href="{{url('data-geografis')}}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Geografis</p>
+                    </a>
+                </li>
+                @endif
+                @if(Auth::user()->level=='Super Admin'|| Auth::user()->level=='DISKOMINFO SP')
+                <li class="nav-item">
+                    <a href="{{url('indikator-data-strategis')}}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Indikator Data Strategis</p>
+                    </a>
+                </li>
+                @endif
+                @if(Auth::user()->level=='Super Admin'|| Auth::user()->level=='BPPRD')
+                <li class="nav-item">
+                    <a href="{{url('pajak-retribusi-daerah')}}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Pajak & Retribusi Daerah</p>
+                    </a>
+                </li>
+                @endif
+            </ul>
         </li>
         @endif
         @if(Auth::user()->level=='Super Admin' ||
@@ -493,7 +493,7 @@
                 <li class="nav-item">
                     <a href="{{url('data-sipil')}}" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
-                        <p>Administrasi Kempendudukan <br> & Pencatatan Sipil</p>
+                        <p>Administrasi Kependudukan <br> & Pencatatan Sipil</p>
                     </a>
                 </li>
             </ul>
@@ -711,6 +711,7 @@
             </a>
         </li>
         @endif
+        
         <li class="nav-item">
             <a href="{{url('/rangking')}}" class="nav-link">
                 <i class="nav-icon fas fa-list"></i>
