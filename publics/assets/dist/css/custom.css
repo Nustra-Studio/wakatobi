@@ -1,0 +1,25 @@
+.container-fluit {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container-xl {
+    margin-top: 70px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+  
+  .btn-custom {
+    color: #fff;
+    background-color: #4E4556;
+    border-color: #4E4556;
+    box-shadow: none;
+  }
+
+.bgpurple {
+  background-color: #4E4556 !important;
+}
