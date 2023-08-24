@@ -7,7 +7,7 @@
             <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
 
                 <div class="card mb-1">
-                    <div class="card-header" style="background-color: #133251!important;" role="tab">
+                    <div class="card-header"  style="background-color: #163C7D!important;" role="tab">
                         <a href="{{url('profile-kecamatan')}}" data-parent="#accordionEx" aria-expanded="true">
                             <H6 class="mb-0 text-white">
                                 <i class="fa fa-file"></i> Data Kec.Wangi-Wangi
@@ -16,7 +16,7 @@
                     </div>
                 </div>
                 <div class="card mb-1">
-                    <div class="card-header" style="background-color: #133251!important;" role="tab">
+                    <div class="card-header"  style="background-color: #163C7D!important;" role="tab">
                         <a href="{{url('profile-kecamatan/wangi-wangi-selatan')}}" data-parent="#accordionEx" aria-expanded="true">
                             <H6 class="mb-0 text-white">
                                 <i class="fa fa-file"></i> Data Kec.Wangi-Wangi Selatan
@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="card mb-1">
-                    <div class="card-header" style="background-color: #133251!important;" role="tab">
+                    <div class="card-header"  style="background-color: #163C7D!important;" role="tab">
                         <a href="{{url('profile-kecamatan/kaledupa')}}" data-parent="#accordionEx" aria-expanded="true">
                             <H6 class="mb-0 text-white">
                                 <i class="fa fa-file"></i> Data Kec.Kaledupa
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="card mb-1">
-                    <div class="card-header" style="background-color: #133251!important;" role="tab">
+                    <div class="card-header"  style="background-color: #163C7D!important;" role="tab">
                         <a href="{{url('profile-kecamatan/kaledupa-selatan')}}" data-parent="#accordionEx" aria-expanded="true">
                             <H6 class="mb-0 text-white">
                                 <i class="fa fa-file"></i> Data Kec.Kaledupa Selatan
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="card mb-1">
-                    <div class="card-header" style="background-color: #133251!important;" role="tab">
+                    <div class="card-header"  style="background-color: #163C7D!important;" role="tab">
                         <a href="{{url('profile-kecamatan/tomia')}}" data-parent="#accordionEx" aria-expanded="true">
                             <H6 class="mb-0 text-white">
                                 <i class="fa fa-file"></i> Data Kec.Tomia
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="card mb-1">
-                    <div class="card-header" style="background-color: #133251!important;" role="tab">
+                    <div class="card-header"  style="background-color: #163C7D!important;" role="tab">
                         <a href="{{url('profile-kecamatan/tomia-timur')}}" data-parent="#accordionEx" aria-expanded="true">
                             <H6 class="mb-0 text-white">
                                 <i class="fa fa-file"></i> Data Kec.Tomia Timur
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="card mb-1">
-                    <div class="card-header" style="background-color: #133251!important;" role="tab">
+                    <div class="card-header"  style="background-color: #163C7D!important;" role="tab">
                         <a href="{{url('profile-kecamatan/binongko')}}" data-parent="#accordionEx" aria-expanded="true">
                             <H6 class="mb-0 text-white">
                                 <i class="fa fa-file"></i> Data Kec.Binongko
@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="card mb-1">
-                    <div class="card-header" style="background-color: #133251!important;" role="tab">
+                    <div class="card-header"  style="background-color: #163C7D!important;" role="tab">
                         <a href="{{url('profile-kecamatan/togo-binongko')}}" data-parent="#accordionEx" aria-expanded="true">
                             <H6 class="mb-0 text-white">
                                 <i class="fa fa-file"></i> Data Kec.Togo Binongko
