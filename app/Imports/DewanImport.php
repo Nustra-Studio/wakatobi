@@ -3,6 +3,7 @@
 namespace App\Imports;
 use Illuminate\Support\Collection;
 use App\models\backend\DewanModel;
+use App\models\backend\RangkingModel;
 use Maatwebsite\Excel\Concerns\ToCollection;
 use DB;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
@@ -11,6 +12,7 @@ class DewanImport implements ToCollection, WithHeadingRow
 {
     public function collection(Collection $collection)
     {
+        $tahunnya = '';
         foreach ($collection as $row){
             $tahun=$row['tahun'];
             $kode = $row['kode'];
@@ -22,6 +24,20 @@ class DewanImport implements ToCollection, WithHeadingRow
             $data->bentuk = $row['bentuk'];
             $data->tanggal = date('Y-m-d H:i:s');
             $data->save();
+            $tahunnya=$row['tahun'];
     }
+    $jumlahdata = DB::table('input_sekertariat_dewan')->count();
+        $jumlahdiisi = DB::table('data_sekertariat_dewan')->where([['tahun',$tahunnya],['jumlah','!=',0]])->count();
+        $namafile = 'Data Sekertariat Dewan';
+        $pj = 'SEKDPRD';
+        $data = RangkingModel::firstOrNew(['nama_file' => $namafile,'tahun'=>$tahunnya]);
+        $data->nama_file = $namafile;
+        $data->total = $jumlahdata;
+        $data->diisi = $jumlahdiisi;
+        $data->presentase = floor(($jumlahdiisi/$jumlahdata)*100);
+        $data->tahun = $tahunnya;
+        $data->tanggal = date('Y-m-d');
+        $data->pj=$pj;
+        $data->save();
     }
 }
