@@ -7,6 +7,10 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 
 .banner-image {
 background-image: url("img/Section1BG.png");
@@ -46,16 +50,21 @@ margin-top: 35;
     display: flex;
    align-items: center;
    justify-content: center;
+   /* background-color: red; */
 }
 
 .section-2-item {
     margin-left: 60px;
     align-items: center;
-    justify-self: center;
+    justify-self: center;   
+    width: 250%;
 }
 .section-2-item span {
    margin-left: 10px;
+   color: #163C7D;
+   font-weight: 500;
 }
+
 
 #berita {
     /* height: 100vh; */
@@ -65,20 +74,25 @@ margin-top: 35;
 .card-img {
     position: relative;
 }
-.img-galeri{
-    width: 40%;
-    height: 40%;
-    border-radius: 10px;
-    margin-right: 15px;
-}
+
 .card-container{
     background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 40px ;
+    padding-top: 15px;
     color: white;
     position: absolute;
-    top:80%;    
+    top: 80%;    
     backdrop-filter: blur(5px);
-    
+    overflow: hidden;
+}
+
+.card-container-galeri{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 15px;
+    color: white;
+    position: absolute;
+    top: 60%;    
+    backdrop-filter: blur(5px);
+    overflow: hidden;
 }
 
 .carousel {
@@ -91,7 +105,7 @@ margin-top: 35;
 }
 
 .card-text {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .kategori {
@@ -158,17 +172,23 @@ margin-top: 35;
     max-height: 100%;
 }
 
-.galeri-item{
-    max-width: 50%;
-    max-height: 50%;
-    border: 10px;
-    margin-bottom: 45px;
+.galeri-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.galeri-item img{
-    max-width: 50%;
-    max-height: 50%;
-    border-radius: 10px;
-    margin-right: 15px;
+
+.galeri-item{
+    max-width: 100%;
+    max-height: 100%;
+    border: 10px;
+    margin-bottom: 10px;
+}
+
+.selengkapnya {
+    margin: 0 auto;
+    color: rgb(225, 225, 225);
+    text-align: center;
 }
 
 #artikel {
@@ -215,7 +235,7 @@ margin-top: 35;
 #tentang-kami .container .row p{
     font-size: 20px;
 }
-#tentang-kami .container img {
+.about-content-img img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -252,11 +272,11 @@ footer {
     /* height: 80vh; */
     flex-wrap: wrap;
     box-sizing: border-box;    
-    margin-top: 30px;
 }
 
 footer .container {
     padding-top: 80px;
+    
 }
 
 .partnership a{
@@ -290,7 +310,7 @@ footer span  {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 430px) {
     /* For mobile phones: */
     .section-2-item {
         margin-left: 10px;
@@ -334,20 +354,31 @@ footer span  {
             padding-top: 20px ;
             color: white;
             position: absolute;
-            top:70%;    
+            top: 70%;    
+            backdrop-filter: blur(5px);
+        }
+        .card-container-galeri{
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 20px ;
+            color: white;
+            position: absolute;
+            overflow: hidden;
+            top: 70%;    
             backdrop-filter: blur(5px);
         }
 
-        .galeri-items {
+        .card-container-galeri h5 {
+            font-size: 15px;
+        }
+
+        .galeri-item{
             margin-top: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        .galeri-item{
-          
-            margin-right: 10px;
-        }
+
+
 
         .galeri-item img{
             max-width: 100%;
@@ -370,6 +401,7 @@ footer span  {
         .box {
             margin: 0 auto;
             margin-top: 20px;
+            
             max-width: 90%;
         }
         .about-content-item {
@@ -392,6 +424,116 @@ footer span  {
             margin-top: 20px;
         }
         .pengunjung {
+            margin: 40px 0;
+            text-align: left;
+        }
+        .about-content-item {
+    
+            position: static;
+        }
+        .content {
+            position: static;
+        }
+        
+        .button-container {
+            top: 95%;
+            left: 70%;
+            position: static;
+        
+        }
+        
+  }
+
+  @media only screen and (min-width:600px) and (max-width:835px)  { 
+
+         
+        .section-2-container{
+            margin: 0 auto;
+            height: 20vh;
+            display: flex;
+           align-items: center;
+           justify-content: center;
+        }
+    
+        .news-content-container {
+            margin-top: 20px;
+            max-height: 280px;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+        .card-container{
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 10px ;
+            color: white;
+            position: absolute;
+            top:70%;    
+            backdrop-filter: blur(5px);
+        }
+        .card-container-galeri{
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 10px ;
+            color: white;
+            position: absolute;
+            overflow: hidden;
+            top:70%;    
+            backdrop-filter: blur(5px);
+        }
+        .card-container-galeri h5 {
+            font-size: 10px;
+        }
+
+        .galeri-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .galeri-item img{
+            max-width: 95%;
+            max-height: 95%;
+        }
+
+
+        .page-button  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .page-button  img{
+        margin-left: 10px;
+         max-width: 50%;
+        max-height: 50%;
+        }
+        #artikel .container img {
+            max-width: 100%;
+            max-height:100%;
+        }
+        .box {
+            max-width: 90%;
+            max-height: 300px;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+        .artikel-img {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .about-content-item {
+    
+            position: static;
+        }
+        .content {
+            position: static;
+            
+        }
+        
+        .button-container {
+            top: 95%;
+            left: 70%;
+            position: static;
+            
+        }
+         .pengunjung {
             margin: 40px 0;
             text-align: left;
         }
