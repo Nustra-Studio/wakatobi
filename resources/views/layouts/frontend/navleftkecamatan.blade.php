@@ -1,7 +1,11 @@
     <div class="col-md-4 col-sm-2 ">
         <div style="padding-top:10%;padding-bottom:15%;background:default;" valign="center">
             <!--Accordion wrapper-->
-            
+            <style>
+                a {
+                    text-decoration: none
+                }
+            </style>
     <h5 class="mt-3">Pilih Data :</h5>
     <hr>
             <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
