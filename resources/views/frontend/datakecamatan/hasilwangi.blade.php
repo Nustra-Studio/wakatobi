@@ -392,7 +392,7 @@ function tampilgrafik(kode, tahunawal, tahunakhir,text) {
     $('#modalgrafik').on('shown.bs.modal', function() {
         chart.render();
         $('#loadingtext').hide();
-       
+    
     });
     $('#modalgrafik').modal('toggle');
     
