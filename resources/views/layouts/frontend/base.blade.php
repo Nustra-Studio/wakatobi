@@ -141,11 +141,6 @@
                     Profile Data
                   </a>
                 </li>
-                <li class="nav-item dropdown me-4">
-                  <a class="nav-link text-white" href="{{url('/profile-kecamatan')}}" >
-                    Profile Kecamatan
-                  </a>
-                </li>
               <li class="nav-item me-4"><a href="{{url('semua-berita')}}" id="ba" class="nav-link text-white">Berita</a></li>
               <li class="nav-item me-4"><a href="{{url('semua-galeri')}}" id="gi" class="nav-link text-white">Galeri</a></li>
               <li class="nav-item me-4"><a href="{{url('semua-artikel')}}" id="al" class="nav-link text-white">Artikel</a></li>
