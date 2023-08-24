@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class KategoriberitaModel extends Model
 {
-    public $timestamps = true;
+    public $timestamps = false;
     protected $table = 'kategori_berita';
     protected $guarded = ['id'];
 }

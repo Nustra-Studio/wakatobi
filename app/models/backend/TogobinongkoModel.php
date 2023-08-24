@@ -4,9 +4,9 @@ namespace App\models\backend;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SliderModel extends Model
+class TogobinongkoModel extends Model
 {
-    public $timestamps = false;
-    protected $table = 'slider';
+    protected $table = 'data_togobinongko';
     protected $guarded = ['id'];
+    public $timestamps = false;
 }

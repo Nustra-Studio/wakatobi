@@ -4,9 +4,9 @@ namespace App\models\backend;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SliderModel extends Model
+class RangkingModel extends Model
 {
-    public $timestamps = false;
-    protected $table = 'slider';
+    protected $table = 'rangking';
     protected $guarded = ['id'];
+    public $timestamps = false;
 }
