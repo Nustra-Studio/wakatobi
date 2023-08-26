@@ -55,7 +55,6 @@
                     </a>
                     <div id="signin_div">
                         <form action="{{ route('login') }}" method="post">
-                            @csrf
                             <div class="signin_head"><span id="headtitle">Masuk</span>
                                 <div class="service_name">untuk mengakses panel <b>Wakatobi</b></div>
                             </div>
@@ -72,6 +71,7 @@
                                 @enderror
                                 <div class="searchparent">
                                     <div class="textbox_div">
+                                        @csrf
                                         <input placeholder="USERNAME" class="textbox" type="text"
                                         name="username" value="{{ old('username') }}" autocomplete="off">
                                     
